@@ -50,8 +50,10 @@ func _physics_process(delta):
 	var right = Input.is_key_pressed(KEY_RIGHT)
 	
 	jumpTime += delta
-	if Input.is_key_pressed(KEY_SPACE):
+	if Input.is_action_pressed("jump"):
 		jump(delta)
+	if Input.is_action_just_pressed("jump"):
+		intitialJump(delta)
 	elif is_on_floor():
 		jumpTime = 0
 	if left:
@@ -129,8 +131,11 @@ func updateTimes(delta):
 	
 
 func jump(delta):
-	if self.is_on_floor() || (jumpTime > 0 and jumpTime <= maxJumpTime):
-		velocity.y = -jumpVelocity 
+	if (jumpTime > 0 and jumpTime <= maxJumpTime) and !is_on_floor():
+			velocity.y = -jumpVelocity 
+func intitialJump(delta):
+	if self.is_on_floor() :
+		velocity.y -=jumpVelocity
 
 func walk_left(delta):
 	get_child(0).scale.x = -1

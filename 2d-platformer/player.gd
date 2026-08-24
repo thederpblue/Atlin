@@ -7,6 +7,7 @@ var jumpTime = 0
 
 var fallMaxSpeed = 160
 
+var airTime = 0
 
 var gravity = 900
 
@@ -25,34 +26,14 @@ var dashDir = Vector2()
 
 
 func _physics_process(delta):
-	get_node("Label").text = str(position)
+	get_node("Label").text = str(velocity)
+	updateTimes(delta)
+	updateIcon()
 	
-	
-	
-	# UPDATE TIMES
-	timeSinceDash += delta
-	if is_on_floor():
-		timeOnFloor += delta
-	elif timeOnFloor > 0:
-		timeOnFloor
-	else:
-		timeOnFloor -= delta
-	
-	#UPDATE ICON
-	if timeSinceDash > 0.25:
-		get_node("GPUParticles2D").emitting = false
-		if dashes == 0:
-			get_node("Sprite2D").texture = load("res://theoWalk.png")
-		elif dashes == 1:
-			get_node("Sprite2D").texture = load("res://theoWalk.png")
-	else:
-		get_node("GPUParticles2D").emitting = true
-		get_node("Sprite2D").texture = load("res://theoWalk.png")
 		
 
 	#FRICTION
-	if abs(velocity.x) > maxWalkVelocity:
-		velocity.x -= delta * decelerationAboveMax
+	
 	
 	#GRAVITY
 	if (timeSinceDash > 0.25 and jumpTime == 0 || jumpTime > maxJumpTime):
@@ -91,6 +72,31 @@ func _physics_process(delta):
 	
 	# APPLY MOVEMENT
 	move_and_slide()
+	
+func friction(delta):
+	if abs(velocity.x) > maxWalkVelocity:
+		velocity.x -= delta * decelerationAboveMax
+	
+	
+func updateIcon():
+	if timeSinceDash > 0.25:
+		get_node("GPUParticles2D").emitting = false
+		if dashes == 0:
+			get_node("Sprite2D").texture = load("res://theoWalk.png")
+		elif dashes == 1:
+			get_node("Sprite2D").texture = load("res://theoWalk.png")
+	else:
+		get_node("GPUParticles2D").emitting = true
+		get_node("Sprite2D").texture = load("res://theoWalk.png")
+
+func updateTimes(delta):
+	timeSinceDash += delta
+	if is_on_floor():
+		timeOnFloor += delta
+		airTime = 0
+	elif !is_on_floor():
+		timeOnFloor = 0
+		airTime += delta
 	
 
 func jump(delta):

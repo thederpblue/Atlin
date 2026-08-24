@@ -3,7 +3,7 @@ extends CharacterBody2D
 var was_left = false
 var was_right = false
 
-
+var respawnPoint = Vector2(0,0)
 var velocityQueue = []
 var velocityBlock = 0
 
@@ -178,4 +178,5 @@ func get_dir():
 		dir.x = get_child(0).scale.x
 	
 	return dir
+	
 	

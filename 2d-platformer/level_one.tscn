@@ -1,183 +1,8 @@
 [gd_scene format=3 uid="uid://qbwmg7q1o1gy"]
 
-[ext_resource type="Script" uid="uid://uavmsxmr3hr4" path="res://player.gd" id="2_bo08i"]
-[ext_resource type="Texture2D" uid="uid://darh20ts4dsko" path="res://theo/theoWalk.png" id="2_foyw7"]
-[ext_resource type="Texture2D" uid="uid://gkmfg1j1a3go" path="res://cement.png" id="3_eck3n"]
-[ext_resource type="Texture2D" uid="uid://desqatm67wo2" path="res://theo/theoIdle2.png" id="3_x6ilr"]
-[ext_resource type="Texture2D" uid="uid://uie01kl2j7hd" path="res://theo/theoWalk2.png" id="3_xsnk2"]
-[ext_resource type="Texture2D" uid="uid://b4fw4ya4t71av" path="res://theo/theoWalk3.png" id="4_0l1we"]
-[ext_resource type="Texture2D" uid="uid://blb84rssimgv3" path="res://theo/theoIdle3.png" id="4_1hlhg"]
-[ext_resource type="Texture2D" uid="uid://d2jfjng0h6nyl" path="res://theo/theoIdle5.png" id="5_7iwu2"]
-[ext_resource type="Texture2D" uid="uid://c6n8bqnjcqktb" path="res://theo/theoWalk4.png" id="5_466b2"]
-[ext_resource type="Texture2D" uid="uid://q2tca3566we5" path="res://theo/theoWalk5.png" id="6_evv1w"]
-[ext_resource type="Texture2D" uid="uid://cfin5atpeo7rh" path="res://theo/theoIdle4.png" id="6_ku3me"]
-[ext_resource type="Texture2D" uid="uid://dshjdh1dsksrd" path="res://theo/theoWalk6.png" id="7_6t2mo"]
-[ext_resource type="Texture2D" uid="uid://e3on534u440s" path="res://theo/theoIdle6.png" id="7_y4edw"]
-[ext_resource type="Texture2D" uid="uid://bio6268na1eb1" path="res://theo/theoIdle7.png" id="8_0ng12"]
-[ext_resource type="Texture2D" uid="uid://gkxukoqdx11" path="res://theo/theoIdle8.png" id="9_mp76m"]
-[ext_resource type="Texture2D" uid="uid://ob7dnj0ts6bp" path="res://theo/theoIdle9.png" id="10_shf2e"]
-[ext_resource type="Texture2D" uid="uid://cj1lxltiybqsa" path="res://theo/theoIdle10.png" id="11_f0vqk"]
-[ext_resource type="Texture2D" uid="uid://cj1vdecluuvyh" path="res://theo/theoIdle11.png" id="12_vhsxa"]
-[ext_resource type="Texture2D" uid="uid://c5l4rtv8xwkwc" path="res://theo/theoIdle12.png" id="13_ks2xm"]
-[ext_resource type="Texture2D" uid="uid://d2abrle5a3unj" path="res://theo/theoIdle13.png" id="14_024us"]
-[ext_resource type="Texture2D" uid="uid://dxhw65ruteohj" path="res://theo/theoIdle14.png" id="15_e2033"]
-[ext_resource type="Texture2D" uid="uid://dcd0esgcw71qd" path="res://theo/theoIdle15.png" id="16_lsd6q"]
-[ext_resource type="Texture2D" uid="uid://5ofpmedafomr" path="res://theo/theoIdle17.png" id="17_0s65a"]
-[ext_resource type="Texture2D" uid="uid://6my6urpp0f2u" path="res://theo/theoIdle16.png" id="18_gicb0"]
-[ext_resource type="Texture2D" uid="uid://rygoexb3h35g" path="res://theo/theoIdle18.png" id="19_h4ye8"]
-[ext_resource type="Texture2D" uid="uid://jseeo2srctif" path="res://theo/theoIdle19.png" id="20_2r7iu"]
-[ext_resource type="Texture2D" uid="uid://4qql73j8ahcj" path="res://theo/theoIdle20.png" id="21_oeppm"]
-[ext_resource type="Texture2D" uid="uid://5sjm8gglyerp" path="res://theo/theoIdle21.png" id="22_j7m1h"]
-[ext_resource type="Texture2D" uid="uid://cgtlopktj8iml" path="res://theo/theoIdle22.png" id="23_htw06"]
-[ext_resource type="Texture2D" uid="uid://kgvlnykeylvx" path="res://theo/theoIdle23.png" id="24_c21dw"]
-[ext_resource type="Texture2D" uid="uid://crelpxe3kay6q" path="res://theo/theoIdle24.png" id="25_c160r"]
-[ext_resource type="Texture2D" uid="uid://82b5aprifx6c" path="res://theo/theoIdle25.png" id="26_lqcju"]
-[ext_resource type="Texture2D" uid="uid://ulfikk5yntgs" path="res://theo/theoIdle26.png" id="27_dsdqp"]
-[ext_resource type="Texture2D" uid="uid://cacb6fghcklth" path="res://theo/theoIdle27.png" id="28_mg377"]
-[ext_resource type="Texture2D" uid="uid://k02ymp1ifctj" path="res://theo/theoIdle28.png" id="29_q0u5c"]
-[ext_resource type="Texture2D" uid="uid://dbmla3fcc6ru4" path="res://theo/theoIdle29.png" id="30_fpcuq"]
-[ext_resource type="Texture2D" uid="uid://c4ujuq0qi1sp3" path="res://theo/theoIdle30.png" id="31_hiegb"]
-[ext_resource type="Texture2D" uid="uid://bw5hr6iqv564a" path="res://theo/theoIdle31.png" id="32_03ye0"]
-[ext_resource type="Texture2D" uid="uid://enyn6a7srfa5" path="res://theo/theoIdle32.png" id="33_8rlc0"]
-[ext_resource type="Texture2D" uid="uid://dj824hjsdg75e" path="res://theo/theoIdle33.png" id="34_yaftr"]
-[ext_resource type="Texture2D" uid="uid://dugkxfm4lks6u" path="res://theo/theoIdle34.png" id="35_duvu1"]
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_bgr0v"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("3_x6ilr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_1hlhg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_7iwu2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_ku3me")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_y4edw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_0ng12")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_mp76m")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_shf2e")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_f0vqk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_vhsxa")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_ks2xm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_024us")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_e2033")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_lsd6q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_0s65a")
-}, {
-"duration": 1.0,
-"texture": ExtResource("18_gicb0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("19_h4ye8")
-}, {
-"duration": 1.0,
-"texture": ExtResource("20_2r7iu")
-}, {
-"duration": 1.0,
-"texture": ExtResource("21_oeppm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("22_j7m1h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("23_htw06")
-}, {
-"duration": 1.0,
-"texture": ExtResource("24_c21dw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("25_c160r")
-}, {
-"duration": 1.0,
-"texture": ExtResource("26_lqcju")
-}, {
-"duration": 1.0,
-"texture": ExtResource("27_dsdqp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("28_mg377")
-}, {
-"duration": 1.0,
-"texture": ExtResource("29_q0u5c")
-}, {
-"duration": 1.0,
-"texture": ExtResource("30_fpcuq")
-}, {
-"duration": 1.0,
-"texture": ExtResource("31_hiegb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("32_03ye0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("33_8rlc0")
-}, {
-"duration": 1.0,
-"texture": ExtResource("34_yaftr")
-}, {
-"duration": 1.0,
-"texture": ExtResource("35_duvu1")
-}],
-"loop": 1,
-"name": &"Idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("2_foyw7")
-}, {
-"duration": 1.0,
-"texture": ExtResource("3_xsnk2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("4_0l1we")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_466b2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_evv1w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_6t2mo")
-}],
-"loop": 1,
-"name": &"Walking",
-"speed": 5.0
-}]
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_q2j6n"]
-particle_flag_disable_z = true
-gravity = Vector3(0, 0, 0)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_cc5bk"]
-size = Vector2(9, 16)
+[ext_resource type="Texture2D" uid="uid://gkmfg1j1a3go" path="res://textures/terrain/cement.png" id="3_eck3n"]
+[ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://Player.tscn" id="3_foyw7"]
+[ext_resource type="PackedScene" uid="uid://dqbdiw1wdscr5" path="res://spike.tscn" id="41_x6ilr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xsnk2"]
 texture = ExtResource("3_eck3n")
@@ -454,34 +279,14 @@ sources/1 = SubResource("TileSetAtlasSource_xsnk2")
 
 [node name="level_one" type="Node2D" unique_id=1951238240]
 
-[node name="player" type="CharacterBody2D" parent="." unique_id=1457096432]
-position = Vector2(232, 210)
-script = ExtResource("2_bo08i")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=1217063442]
-sprite_frames = SubResource("SpriteFrames_bgr0v")
-animation = &"Idle"
-autoplay = "Idle"
-
-[node name="GPUParticles2D" type="GPUParticles2D" parent="player" unique_id=1207795625]
-amount = 100
-process_material = SubResource("ParticleProcessMaterial_q2j6n")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=1391508493]
-position = Vector2(-0.5, 8)
-shape = SubResource("RectangleShape2D_cc5bk")
-
-[node name="Camera2D" type="Camera2D" parent="player" unique_id=1897965041]
-zoom = Vector2(3, 3)
-
-[node name="Label" type="Label" parent="player" unique_id=131857617]
-offset_left = 38.0
-offset_top = -4.0
-offset_right = 78.0
-offset_bottom = 19.0
-
 [node name="TileMap" type="TileMap" parent="." unique_id=1822866871]
 tile_set = SubResource("TileSet_84s55")
 rendering_quadrant_size = 40
 format = 2
-layer_0/tile_data = PackedInt32Array(1572878, 1, 2, 1572879, 1, 2, 1572880, 1, 2, 1572881, 1, 2, 1572882, 1, 2, 1572883, 1, 2, 1572884, 1, 2, 1572885, 1, 2, 1572886, 1, 2, 1572887, 1, 2, 1572888, 1, 2, 1572889, 1, 2, 1572890, 1, 2, 1572891, 1, 2, 1572892, 1, 2, 1572893, 1, 2, 1572894, 1, 2, 1572895, 1, 2, 1572896, 1, 2, 1572897, 1, 2, 1572898, 1, 2, 1572899, 1, 2, 1572900, 1, 2, 1572901, 1, 2, 1572902, 1, 2, 1572903, 1, 2, 1572904, 1, 2, 1507349, 196609, 2, 1441813, 196609, 2, 1376277, 196609, 2, 1310741, 196609, 2, 1245205, 196609, 2, 1179669, 196609, 2, 1114133, 196609, 2)
+layer_0/tile_data = PackedInt32Array(1572877, 1, 1, 1572876, 131073, 1, 1572875, 65537, 1, 1572874, 1, 1, 1572873, 131073, 1, 1572872, 65537, 1, 1572871, 1, 1, 1572870, 131073, 1, 1572869, 65537, 1, 1572868, 1, 1, 1572867, 131073, 1, 1572866, 65537, 1, 1572865, 1, 1, 1572864, 131073, 1, 1638399, 65537, 1, 1638398, 1, 1, 1638397, 131073, 1, 1638396, 65537, 1, 1638395, 1, 1, 1638394, 131073, 1, 1638393, 65537, 1, 1638392, 1, 1, 1638391, 131073, 1, 1638390, 65537, 1, 1638389, 1, 1, 1703925, 1, 2, 1703926, 65537, 2, 1703927, 131073, 2, 1703928, 1, 2, 1703929, 65537, 2, 1703930, 131073, 2, 1703931, 1, 2, 1703932, 65537, 2, 1703933, 131073, 2, 1703934, 1, 2, 1703935, 65537, 2, 1638400, 131073, 2, 1638401, 1, 2, 1638402, 65537, 2, 1638403, 131073, 2, 1638404, 1, 2, 1638405, 65537, 2, 1638406, 131073, 2, 1638407, 1, 2, 1638408, 65537, 2, 1638409, 131073, 2, 1638410, 1, 2, 1638411, 65537, 2, 1638412, 131073, 2, 1638413, 1, 2, 1572878, 65537, 1, 1638414, 65537, 2, 1572879, 131073, 1, 1638415, 131073, 2, 1572880, 1, 1, 1638416, 1, 2, 1572881, 65537, 1, 1638417, 65537, 2, 1572882, 131073, 1, 1638418, 131073, 2, 1572883, 1, 1, 1638419, 1, 2, 1572884, 65537, 1, 1638420, 65537, 2, 1572885, 131073, 1, 1638421, 131073, 2, 1572886, 1, 1, 1638422, 1, 2, 1572887, 65537, 1, 1638423, 65537, 2, 1572888, 131073, 1, 1638424, 131073, 2, 1572889, 1, 1, 1638425, 1, 2, 1572890, 65537, 1, 1638426, 65537, 2, 1572891, 131073, 1, 1638427, 131073, 2, 1179637, 196609, 3, 1245173, 196609, 4, 1310709, 196609, 5, 1376245, 196609, 6, 1441781, 196609, 7, 1507317, 196609, 8, 1572853, 196609, 9, 720885, 196609, 3, 786421, 196609, 4, 851957, 196609, 5, 917493, 196609, 6, 983029, 196609, 7, 1048565, 196609, 8, 1114101, 196609, 9, 262133, 196609, 3, 327669, 196609, 4, 393205, 196609, 5, 458741, 196609, 6, 524277, 196609, 7, 589813, 196609, 8, 655349, 196609, 9, 1179642, 1, 6, 1179643, 65537, 6, 1179644, 131073, 6, 1310720, 1, 6, 1310721, 65537, 6, 1310722, 131073, 6, 655362, 1, 6, 655363, 65537, 6, 655364, 131073, 6, 589817, 1, 6, 589818, 65537, 6, 589819, 131073, 6, 196616, 1, 6, 196617, 65537, 6, 196618, 131073, 6, 851986, 1, 6, 851987, 65537, 6, 851988, 131073, 6, 262167, 1, 6, 262168, 65537, 6, 262169, 131073, 6, 1572892, 1, 8, 1638428, 1, 9, 1572893, 65537, 8, 1638429, 65537, 9, 1572894, 131073, 8, 1638430, 131073, 9, 1572895, 1, 8, 1638431, 1, 9, 1572896, 65537, 8, 1638432, 65537, 9, 1572897, 131073, 8, 1638433, 131073, 9, 1572898, 1, 8, 1638434, 1, 9, 1572899, 65537, 8, 1638435, 65537, 9, 1572900, 131073, 8, 1638436, 131073, 9, 1572901, 1, 8, 1638437, 1, 9, 1572902, 65537, 8, 1638438, 65537, 9, 1572903, 131073, 8, 1638439, 131073, 9, 1572904, 1, 8, 1638440, 1, 9, 1572905, 65537, 8, 1638441, 65537, 9, 1572906, 131073, 8, 1638442, 131073, 9)
+
+[node name="spike" parent="." unique_id=950716879 instance=ExtResource("41_x6ilr")]
+position = Vector2(264, 236)
+
+[node name="Player" parent="." unique_id=399623464 instance=ExtResource("3_foyw7")]
+position = Vector2(44, -30)

@@ -110,7 +110,6 @@ func updateIcon():
 	if velocity.x != 0:
 		get_node("AnimatedSprite2D").play("Walking")
 	else:
-		get_node("AnimatedSprite2D").stop()
 		get_node("AnimatedSprite2D").play("Idle")
 	if timeSinceDash > 0.25:
 		get_node("GPUParticles2D").emitting = false

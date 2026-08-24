@@ -1,5 +1,10 @@
 [gd_scene load_steps=47 format=3 uid="uid://qbwmg7q1o1gy"]
 
+<<<<<<< HEAD
+[ext_resource type="Texture2D" uid="uid://gkmfg1j1a3go" path="res://textures/terrain/cement.png" id="3_eck3n"]
+[ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://Player.tscn" id="3_foyw7"]
+[ext_resource type="PackedScene" uid="uid://dqbdiw1wdscr5" path="res://spike.tscn" id="41_x6ilr"]
+=======
 [ext_resource type="Script" path="res://player.gd" id="2_bo08i"]
 [ext_resource type="Texture2D" uid="uid://darh20ts4dsko" path="res://theo/theoWalk.png" id="2_foyw7"]
 [ext_resource type="Texture2D" uid="uid://gkmfg1j1a3go" path="res://cement.png" id="3_eck3n"]
@@ -181,6 +186,7 @@ gravity = Vector3(0, 0, 0)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cc5bk"]
 size = Vector2(9, 16)
+>>>>>>> bc2eaa0ca3f11e5143a540ac4954179e10447389
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xsnk2"]
 texture = ExtResource("3_eck3n")
@@ -457,6 +463,9 @@ sources/1 = SubResource("TileSetAtlasSource_xsnk2")
 
 [node name="level_one" type="Node2D"]
 
+<<<<<<< HEAD
+[node name="TileMap" type="TileMap" parent="." unique_id=1822866871]
+=======
 [node name="player" type="CharacterBody2D" parent="."]
 position = Vector2(232, 210)
 script = ExtResource("2_bo08i")
@@ -483,6 +492,7 @@ offset_right = 78.0
 offset_bottom = 19.0
 
 [node name="TileMap" type="TileMap" parent="."]
+>>>>>>> bc2eaa0ca3f11e5143a540ac4954179e10447389
 tile_set = SubResource("TileSet_84s55")
 rendering_quadrant_size = 40
 format = 2

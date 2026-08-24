@@ -47,7 +47,7 @@ func _physics_process(delta):
 	
 	#DETECT MOVEMENT
 	var left = Input.is_action_pressed("left")
-	var right = Input.is_action_pressed("left")
+	var right = Input.is_action_pressed("right")
 	
 	jumpTime += delta
 	if Input.is_action_pressed("jump"):

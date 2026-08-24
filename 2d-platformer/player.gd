@@ -46,8 +46,8 @@ func _physics_process(delta):
 	
 	
 	#DETECT MOVEMENT
-	var left = Input.is_key_pressed(KEY_LEFT)
-	var right = Input.is_key_pressed(KEY_RIGHT)
+	var left = Input.is_action_pressed("left")
+	var right = Input.is_action_pressed("left")
 	
 	jumpTime += delta
 	if Input.is_action_pressed("jump"):
@@ -62,7 +62,7 @@ func _physics_process(delta):
 		walk_right(delta)
 	if (was_left || was_right) and !left and !right:
 		stop_walk()
-	if Input.is_key_pressed(KEY_C) and dashes >  0 and timeSinceDash > dashCooldown:
+	if Input.is_action_pressed("dash") and dashes >  0 and timeSinceDash > dashCooldown:
 		dash(delta)
 	
 	was_left = left
@@ -171,13 +171,13 @@ func dash(delta):
 
 func get_dir():
 	var dir = Vector2(0,0)
-	if Input.is_key_pressed(KEY_LEFT):
+	if Input.is_action_pressed("left"):
 		dir.x = -1
-	elif Input.is_key_pressed(KEY_RIGHT):
+	elif Input.is_action_pressed("right"):
 		dir.x = 1
-	if Input.is_key_pressed(KEY_UP):
+	if Input.is_action_pressed("up"):
 		dir.y = -1
-	elif Input.is_key_pressed(KEY_DOWN):
+	elif Input.is_action_pressed("down"):
 		dir.y = 1
 	if dir == Vector2(0,0):
 		dir.x = get_child(0).scale.x

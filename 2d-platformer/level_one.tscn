@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://qbwmg7q1o1gy"]
+[gd_scene load_steps=47 format=3 uid="uid://qbwmg7q1o1gy"]
 
-[ext_resource type="Script" uid="uid://uavmsxmr3hr4" path="res://player.gd" id="2_bo08i"]
+[ext_resource type="Script" path="res://player.gd" id="2_bo08i"]
 [ext_resource type="Texture2D" uid="uid://darh20ts4dsko" path="res://theo/theoWalk.png" id="2_foyw7"]
 [ext_resource type="Texture2D" uid="uid://gkmfg1j1a3go" path="res://cement.png" id="3_eck3n"]
 [ext_resource type="Texture2D" uid="uid://desqatm67wo2" path="res://theo/theoIdle2.png" id="3_x6ilr"]
@@ -45,6 +45,9 @@
 [sub_resource type="SpriteFrames" id="SpriteFrames_bgr0v"]
 animations = [{
 "frames": [{
+"duration": 1.0,
+"texture": null
+}, {
 "duration": 1.0,
 "texture": ExtResource("3_x6ilr")
 }, {
@@ -144,7 +147,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("35_duvu1")
 }],
-"loop": 1,
+"loop": true,
 "name": &"Idle",
 "speed": 5.0
 }, {
@@ -167,7 +170,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("7_6t2mo")
 }],
-"loop": 1,
+"loop": true,
 "name": &"Walking",
 "speed": 5.0
 }]
@@ -452,35 +455,34 @@ tile_size = Vector2i(10, 10)
 physics_layer_0/collision_layer = 1
 sources/1 = SubResource("TileSetAtlasSource_xsnk2")
 
-[node name="level_one" type="Node2D" unique_id=1951238240]
+[node name="level_one" type="Node2D"]
 
-[node name="player" type="CharacterBody2D" parent="." unique_id=1457096432]
+[node name="player" type="CharacterBody2D" parent="."]
 position = Vector2(232, 210)
 script = ExtResource("2_bo08i")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=1217063442]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player"]
 sprite_frames = SubResource("SpriteFrames_bgr0v")
 animation = &"Idle"
-autoplay = "Idle"
 
-[node name="GPUParticles2D" type="GPUParticles2D" parent="player" unique_id=1207795625]
+[node name="GPUParticles2D" type="GPUParticles2D" parent="player"]
 amount = 100
 process_material = SubResource("ParticleProcessMaterial_q2j6n")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=1391508493]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
 position = Vector2(-0.5, 8)
 shape = SubResource("RectangleShape2D_cc5bk")
 
-[node name="Camera2D" type="Camera2D" parent="player" unique_id=1897965041]
+[node name="Camera2D" type="Camera2D" parent="player"]
 zoom = Vector2(3, 3)
 
-[node name="Label" type="Label" parent="player" unique_id=131857617]
+[node name="Label" type="Label" parent="player"]
 offset_left = 38.0
 offset_top = -4.0
 offset_right = 78.0
 offset_bottom = 19.0
 
-[node name="TileMap" type="TileMap" parent="." unique_id=1822866871]
+[node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_84s55")
 rendering_quadrant_size = 40
 format = 2

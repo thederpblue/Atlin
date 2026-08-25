@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bo3bvoy4nyew3"
-path="res://.godot/imported/outline.png-7d8764cad7b8d325ae9e24de114f7dfd.ctex"
+uid="uid://cottfqqjp4tqr"
+path="res://.godot/imported/idle04.png-dd628af93bf7b3c7b14aaa2b397d0bb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/dash crystal/outline.png"
-dest_files=["res://.godot/imported/outline.png-7d8764cad7b8d325ae9e24de114f7dfd.ctex"]
+source_file="res://textures/objects/dash crystal/idle04.png"
+dest_files=["res://.godot/imported/idle04.png-dd628af93bf7b3c7b14aaa2b397d0bb5.ctex"]
 
 [params]
 

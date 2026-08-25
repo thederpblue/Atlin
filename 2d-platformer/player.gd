@@ -8,8 +8,8 @@ var velocityQueue = []
 var velocityBlock = 0
 
 
-var dashes = 1
-var maxDashes = 2
+var maxDashes = 1
+var dashes = maxDashes
 var timeSinceDash = 0
 var timeOnFloor = 0
 var jumpTime = 0
@@ -117,7 +117,8 @@ func addToVeloctiyQueue(velocity: Vector2, time: float, constant: bool, add: boo
 	
 func updateDashes(delta):
 	if is_on_floor() and velocityBlock <= 0 - 0.01:
-		dashes = maxDashes
+		if dashes < maxDashes:
+			dashes = maxDashes
 	
 	
 func applyGravity(delta):

@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://p647bqh8bc14" path="res://textures/terrain/cement.png" id="3_eck3n"]
 [ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://Player.tscn" id="3_foyw7"]
 [ext_resource type="Texture2D" uid="uid://cn87xyddp3pi4" path="res://textures/POI/default_up00.png" id="4_eck3n"]
+[ext_resource type="PackedScene" uid="uid://d447e6in274k" path="res://double_dash_crystal.tscn" id="5_l6eyr"]
 [ext_resource type="PackedScene" uid="uid://blq1j11ehbmxv" path="res://dash_crystal.tscn" id="5_xsnk2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_foyw7"]
@@ -223,4 +224,8 @@ tile_set = SubResource("TileSet_q2j6n")
 format = 2
 layer_0/tile_data = PackedInt32Array(2621450, 0, 0, 2621451, 0, 0, 2621452, 0, 0, 2621453, 0, 0, 2621454, 0, 0, 2621455, 0, 0, 2621456, 0, 0, 2621457, 0, 0, 2621458, 0, 0, 2621459, 0, 0)
 
+[node name="Double Dash Crystal" parent="." unique_id=825427294 instance=ExtResource("5_l6eyr")]
+position = Vector2(21, 15)
+
 [node name="Dash Crystal" parent="." unique_id=1500967729 instance=ExtResource("5_xsnk2")]
+position = Vector2(-10, 13)

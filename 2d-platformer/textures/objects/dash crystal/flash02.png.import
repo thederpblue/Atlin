@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://oj47yyki70tt"
-path="res://.godot/imported/idle01.png-5b5640096afdb3b1165568ffebbb9c10.ctex"
+uid="uid://os1558tyhe7w"
+path="res://.godot/imported/flash02.png-fe073715f1498f8ecf4c962940943304.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/dash crystal/idle01.png"
-dest_files=["res://.godot/imported/idle01.png-5b5640096afdb3b1165568ffebbb9c10.ctex"]
+source_file="res://textures/objects/dash crystal/flash02.png"
+dest_files=["res://.godot/imported/flash02.png-fe073715f1498f8ecf4c962940943304.ctex"]
 
 [params]
 

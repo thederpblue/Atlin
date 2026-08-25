@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c41v6yyn0le7r"
-path="res://.godot/imported/flash01.png-e66fe6252c8314799b592841c22206cc.ctex"
+uid="uid://coeoexvye3smp"
+path="res://.godot/imported/flash03.png-c31745c2ca7fb26ad12b9de7dfdf1a0e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/dash crystal/flash01.png"
-dest_files=["res://.godot/imported/flash01.png-e66fe6252c8314799b592841c22206cc.ctex"]
+source_file="res://textures/objects/dash crystal/flash03.png"
+dest_files=["res://.godot/imported/flash03.png-c31745c2ca7fb26ad12b9de7dfdf1a0e.ctex"]
 
 [params]
 

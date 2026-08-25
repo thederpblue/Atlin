@@ -230,8 +230,5 @@ layer_0/tile_data = PackedInt32Array(1179666, 0, 0, 1179667, 0, 0, 1179668, 0, 0
 position = Vector2(21, 15)
 
 [node name="Dash Crystal" parent="." unique_id=1500967729 instance=ExtResource("5_xsnk2")]
-<<<<<<< HEAD
 position = Vector2(-10, 13)
-=======
-position = Vector2(295, -48)
->>>>>>> ca96050642a367d5ebbe0e83179eb5433d2e4623
+

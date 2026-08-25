@@ -8,13 +8,10 @@ var velocityQueue = []
 var velocityBlock = 0
 
 
-<<<<<<< HEAD
 var maxDashes = 1
 var dashes = maxDashes
-=======
-var dashes = 1
-var maxDashes = 1
->>>>>>> ca96050642a367d5ebbe0e83179eb5433d2e4623
+
+
 var timeSinceDash = 0
 var timeOnFloor = 0
 var jumpTime = 0

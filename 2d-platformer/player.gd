@@ -9,6 +9,7 @@ var velocityBlock = 0
 
 
 var dashes = 1
+var maxDashes = 2
 var timeSinceDash = 0
 var timeOnFloor = 0
 var jumpTime = 0
@@ -65,7 +66,7 @@ func _physics_process(delta):
 		walk_right(delta)
 	if (was_left || was_right) and !left and !right:
 		stop_walk()
-	if Input.is_action_pressed("dash") and dashes >  0 and timeSinceDash > dashCooldown:
+	if Input.is_action_just_pressed("dash") and dashes >  0 and timeSinceDash > dashCooldown:
 		dash(delta)
 	
 	was_left = left
@@ -97,7 +98,7 @@ func addToVeloctiyQueue(velocity: Vector2, time: float, constant: bool, add: boo
 	
 func updateDashes(delta):
 	if is_on_floor() and velocityBlock <= 0 - 0.01:
-		dashes = 1
+		dashes = maxDashes
 	
 	
 func applyGravity(delta):

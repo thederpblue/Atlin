@@ -9,7 +9,7 @@ var velocityBlock = 0
 
 
 var dashes = 1
-var maxDashes = 2
+var maxDashes = 1
 var timeSinceDash = 0
 var timeOnFloor = 0
 var jumpTime = 0

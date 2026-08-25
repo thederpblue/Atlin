@@ -2,9 +2,13 @@
 
 [ext_resource type="Script" uid="uid://uavmsxmr3hr4" path="res://player.gd" id="1_gueye"]
 [ext_resource type="Texture2D" uid="uid://cb4afvvo066rv" path="res://textures/theo/theoIdle2.png" id="2_3tfrk"]
+[ext_resource type="Texture2D" uid="uid://bely2njojiee2" path="res://textures/theo/theo144.png" id="2_6efpq"]
 [ext_resource type="Texture2D" uid="uid://dwmerbr21dk2w" path="res://textures/theo/theoIdle3.png" id="3_f7new"]
+[ext_resource type="Texture2D" uid="uid://dm7d6yoi6hudj" path="res://textures/theo/theo145.png" id="3_fhngp"]
+[ext_resource type="Texture2D" uid="uid://dows12gitxia0" path="res://textures/theo/theo146.png" id="4_nd6qy"]
 [ext_resource type="Texture2D" uid="uid://4gims1tnvr55" path="res://textures/theo/theoIdle5.png" id="4_ravlb"]
 [ext_resource type="Texture2D" uid="uid://u7cb8je5iphu" path="res://textures/theo/theoIdle4.png" id="5_6efpq"]
+[ext_resource type="Texture2D" uid="uid://b004w8qrfoanw" path="res://textures/theo/theo147.png" id="5_23wgl"]
 [ext_resource type="Texture2D" uid="uid://c6hrcuxgxad0c" path="res://textures/theo/theoIdle6.png" id="6_fhngp"]
 [ext_resource type="Texture2D" uid="uid://c8frqvghfk1lg" path="res://textures/theo/theoIdle7.png" id="7_nd6qy"]
 [ext_resource type="Texture2D" uid="uid://bhi1s18mk05uo" path="res://textures/theo/theoIdle8.png" id="8_23wgl"]
@@ -43,6 +47,23 @@
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gueye"]
 animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6efpq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fhngp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_nd6qy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_23wgl")
+}],
+"loop": 1,
+"name": &"Falling",
+"speed": 5.0
+}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("2_3tfrk")
@@ -186,9 +207,10 @@ script = ExtResource("1_gueye")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=631297549]
 sprite_frames = SubResource("SpriteFrames_gueye")
 animation = &"Idle"
-autoplay = "Idle"
+frame_progress = 0.07459373
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="player" unique_id=1713399803]
+emitting = false
 amount = 100
 process_material = SubResource("ParticleProcessMaterial_3tfrk")
 

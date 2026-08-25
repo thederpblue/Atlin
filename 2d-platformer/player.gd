@@ -39,7 +39,7 @@ var dashDir = Vector2()
 @onready var col_shape_node := $CollisionShape2D
 
 func _ready():
-	position = respawnPoint
+	respawnPoint = position 
 	velocity = ScreenHolder.carry_velocity
 
 func _physics_process(delta):
@@ -136,7 +136,9 @@ func applyfriction(delta):
 			velocity.x += delta * decelerationAboveMax
 	
 func updateIcon():
-	if velocity != Vector2.ZERO:
+	if velocity.y > 0:
+		get_node("AnimatedSprite2D").play("Falling")
+	elif velocity != Vector2.ZERO:
 		get_node("AnimatedSprite2D").play("Walking")
 	else:
 		get_node("AnimatedSprite2D").play("Idle")

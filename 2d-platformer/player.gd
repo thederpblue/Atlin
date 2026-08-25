@@ -33,6 +33,9 @@ var dashCooldown = 0.2
 var dashDir = Vector2()
 
 
+func _ready():
+	position = respawnPoint
+
 func _physics_process(delta):
 	get_node("Label").text = str(velocity)
 	updateTimes(delta)

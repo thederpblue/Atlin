@@ -6,3 +6,4 @@ func _on_spike_hit_box_body_shape_entered(body_rid: RID, body: Node2D, body_shap
 	if body.name == "player":
 		body.velocity = Vector2.ZERO
 		body.position = body.respawnPoint
+		body.velocityQueue = []

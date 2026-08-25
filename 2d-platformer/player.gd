@@ -40,6 +40,7 @@ var dashDir = Vector2()
 
 func _ready():
 	position = respawnPoint
+	velocity = ScreenHolder.carry_velocity
 
 func _physics_process(delta):
 	
@@ -186,7 +187,6 @@ func stop_walk():
 
 func dash(delta):
 	dashDir = get_dir().normalized()
-	print(dashDir)
 	addToVeloctiyQueue(dashDir * dashVelocity, dashTime, true, false)
 	addToVeloctiyQueue(dashDir * afterDashVelocity, dashTime + delta, false, false)
 	velocityBlock = 0.25

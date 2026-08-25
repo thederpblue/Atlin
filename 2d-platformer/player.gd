@@ -34,10 +34,29 @@ var dashCooldown = 0.2
 var dashDir = Vector2()
 
 
+@onready var col_shape_node := $CollisionShape2D
+
 func _ready():
 	position = respawnPoint
 
 func _physics_process(delta):
+	
+	var shape_res = col_shape_node.shape
+	
+	var space := get_world_2d().direct_space_state
+	var params  = PhysicsShapeQueryParameters2D.new()
+	
+	params.shape_rid = shape_res.get_rid()
+	
+	params.transform = col_shape_node.get_global_transform()
+	params.collision_mask = 1 << 1
+	
+	var result := space.intersect_shape(params)
+	if result.size() > 0:
+		velocity = Vector2.ZERO
+		position = respawnPoint
+		velocityQueue = []
+	
 	get_node("Label").text = str(velocity)
 	updateTimes(delta)
 	updateIcon()

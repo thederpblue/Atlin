@@ -8,8 +8,13 @@ var velocityQueue = []
 var velocityBlock = 0
 
 
+<<<<<<< HEAD
 var maxDashes = 1
 var dashes = maxDashes
+=======
+var dashes = 1
+var maxDashes = 1
+>>>>>>> ca96050642a367d5ebbe0e83179eb5433d2e4623
 var timeSinceDash = 0
 var timeOnFloor = 0
 var jumpTime = 0
@@ -54,7 +59,7 @@ func _physics_process(delta):
 	var result := space.intersect_shape(params)
 	if result.size() > 0:
 		velocity = Vector2.ZERO
-		position = respawnPoint
+		position = get_tree().current_scene.respawn_point
 		velocityQueue = []
 	
 	get_node("Label").text = str(velocity)
@@ -133,7 +138,7 @@ func applyfriction(delta):
 			velocity.x += delta * decelerationAboveMax
 	
 func updateIcon():
-	if velocity.x != 0:
+	if velocity != Vector2.ZERO:
 		get_node("AnimatedSprite2D").play("Walking")
 	else:
 		get_node("AnimatedSprite2D").play("Idle")

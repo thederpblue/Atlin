@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://7wyn4h86xhjj"]
+
+[ext_resource type="Script" uid="uid://dlfhr8mdcu6qg" path="res://spike.gd" id="1_7k7bx"]
+[ext_resource type="Texture2D" uid="uid://cn87xyddp3pi4" path="res://textures/POI/default_up00.png" id="1_8ryga"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bgr0v"]
+size = Vector2(5, 4)
+
+[node name="spike" type="Node2D" unique_id=950716879]
+script = ExtResource("1_7k7bx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1945560210]
+texture = ExtResource("1_8ryga")
+
+[node name="spikeHitBox" type="Area2D" parent="." unique_id=214778598]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="spikeHitBox" unique_id=2117114898]
+position = Vector2(-0.5, 2)
+shape = SubResource("RectangleShape2D_bgr0v")
+
+[connection signal="body_shape_entered" from="spikeHitBox" to="." method="_on_spike_hit_box_body_shape_entered"]

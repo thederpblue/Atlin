@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://dtfdgni4ihgt0"]
+
+[ext_resource type="Texture2D" uid="uid://bdv76r6nccb0g" path="res://textures/Objects/idle00.png" id="1_q2058"]
+[ext_resource type="Script" uid="uid://cub3epifcal5a" path="res://dash_crystal.gd" id="1_wnogr"]
+[ext_resource type="Texture2D" uid="uid://dli2hqs7dcxqq" path="res://textures/Objects/flash00.png" id="2_nutox"]
+[ext_resource type="Texture2D" uid="uid://b4a0xu75ms668" path="res://textures/Objects/idle01.png" id="2_wnogr"]
+[ext_resource type="Texture2D" uid="uid://cdmi5w3sv08k1" path="res://textures/Objects/flash01.png" id="3_377by"]
+[ext_resource type="Texture2D" uid="uid://bkuai1gbkkgia" path="res://textures/Objects/idle02.png" id="3_x6c65"]
+[ext_resource type="Texture2D" uid="uid://c637xcb2levjx" path="res://textures/Objects/flash02.png" id="4_mehe6"]
+[ext_resource type="Texture2D" uid="uid://cl0m1p3fteede" path="res://textures/Objects/idle03.png" id="4_ril57"]
+[ext_resource type="Texture2D" uid="uid://di8r5lt201q1s" path="res://textures/Objects/idle04.png" id="5_pyx2p"]
+[ext_resource type="Texture2D" uid="uid://dsfd8hfh1xe2i" path="res://textures/Objects/flash03.png" id="5_wm5df"]
+[ext_resource type="Texture2D" uid="uid://bbqnb2o8ffk0w" path="res://textures/Objects/flash04.png" id="6_s0ael"]
+[ext_resource type="Texture2D" uid="uid://b4ew3a7u2aofq" path="res://textures/Objects/flash05.png" id="7_owwju"]
+[ext_resource type="Texture2D" uid="uid://ddnsnvb51uh06" path="res://textures/Objects/outline.png" id="13_377by"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l0bqs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nutox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_377by")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_mehe6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wm5df")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_s0ael")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_owwju")
+}],
+"loop": 0,
+"name": &"flash",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_q2058")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_wnogr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_x6c65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ril57")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_pyx2p")
+}],
+"loop": 1,
+"name": &"idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("13_377by")
+}],
+"loop": 1,
+"name": &"outline",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l0bqs"]
+size = Vector2(10, 10)
+
+[node name="Dash Crystal" type="Node2D" unique_id=1500967729]
+visible = false
+script = ExtResource("1_wnogr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=348534508]
+sprite_frames = SubResource("SpriteFrames_l0bqs")
+animation = &"outline"
+
+[node name="Area2D" type="Area2D" parent="." unique_id=2011746178]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=82007514]
+shape = SubResource("RectangleShape2D_l0bqs")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

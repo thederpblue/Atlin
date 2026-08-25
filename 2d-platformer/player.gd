@@ -22,6 +22,9 @@ var airTime = 0
 
 var gravity = 900
 
+var isClimbing = false
+var isClimbJumping = false
+
 var maxWalkVelocity = 90
 var walkAcceleration = 1000
 var decelerationAboveMax = 400
@@ -65,7 +68,8 @@ func _physics_process(delta):
 	applyfriction(delta)
 	applyGravity(delta)
 	updateDashes(delta)
-	updateVelocityQueue(delta)
+	updateVelocityQueue(delta) 
+	updateClimbing(delta)
 	
 	
 	
@@ -89,6 +93,10 @@ func _physics_process(delta):
 		stop_walk()
 	if Input.is_action_just_pressed("dash") and dashes >  0 and timeSinceDash > dashCooldown:
 		dash(delta)
+	if Input.is_action_pressed("grab"):
+		climb(delta)
+	if Input.is_action_just_released("grab"):
+		isClimbing = false
 	
 	was_left = left
 	was_right = right
@@ -121,10 +129,12 @@ func updateDashes(delta):
 	if is_on_floor() and velocityBlock <= 0 - 0.01:
 		if dashes < maxDashes:
 			dashes = maxDashes
-	
+func updateClimbing(delta):
+	if !is_on_wall():
+		isClimbing = false
 	
 func applyGravity(delta):
-	if velocityBlock <= 0:
+	if velocityBlock <= 0 && !isClimbing:
 		velocity.y += gravity * delta
 
 func applyfriction(delta):
@@ -160,8 +170,14 @@ func jump(delta):
 	if (jumpTime > 0 and jumpTime <= maxJumpTime) and !is_on_floor():
 			velocity.y = -jumpVelocity 
 func intitialJump(delta):
-	if self.is_on_floor() :
+	if self.is_on_floor() || isClimbing:
 		velocity.y -=jumpVelocity
+		if isClimbing:
+			isClimbing = false
+			isClimbJumping = true
+			await get_tree().create_timer(0.3).timeout
+			isClimbJumping = false
+
 
 func walk_left(delta):
 	get_child(0).scale.x = -1
@@ -194,7 +210,11 @@ func dash(delta):
 	timeOnFloor = -0.25
 	timeSinceDash = 0
 
-
+func climb(delt):
+	if is_on_wall() && !isClimbJumping:
+		velocity.y == 0
+		isClimbing = true
+		
 func get_dir():
 	var dir = Vector2(0,0)
 	if Input.is_action_pressed("left"):

@@ -11,7 +11,7 @@ func _ready():
 func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
 	print(body.name)
 	if 	currentAnimation == "idle" and body.name == "player":
-		if !body.dashes == body.maxDashes:
+		if body.dashes < body.maxDashes:
 			body.dashes = body.maxDashes
 			get_node("AnimatedSprite2D").play("flash")
 			currentAnimation = "flash"

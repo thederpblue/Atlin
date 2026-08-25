@@ -231,4 +231,3 @@ position = Vector2(21, 15)
 
 [node name="Dash Crystal" parent="." unique_id=1500967729 instance=ExtResource("5_xsnk2")]
 position = Vector2(-10, 13)
-

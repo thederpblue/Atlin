@@ -35,6 +35,7 @@ var dashTime = 0.15
 var dashCooldown = 0.2
 var dashDir = Vector2()
 
+var lookingAtPhone = false
 
 @onready var col_shape_node := $CollisionShape2D
 
@@ -119,7 +120,9 @@ func applyfriction(delta):
 			velocity.x += delta * decelerationAboveMax
 	
 func updateIcon():
-	if velocity.y > 0:
+	if lookingAtPhone:
+		get_node("AnimatedSprite2D").play("Phone_msg")
+	elif velocity.y > 0:
 		get_node("AnimatedSprite2D").play("Falling")
 	elif velocity != Vector2.ZERO:
 		get_node("AnimatedSprite2D").play("Walking")

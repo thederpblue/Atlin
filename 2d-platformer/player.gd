@@ -182,7 +182,11 @@ func jump(delta):
 			velocity.y = -jumpVelocity 
 func intitialJump(delta):
 	if self.is_on_floor():
-		velocity.y -=jumpVelocity
+		velocity.x += sign(velocity.x) * 40
+		if velocity.x != 0:
+			velocity.y -=jumpVelocity + 40
+		else:
+			velocity.y -=jumpVelocity
 	if isClimbing:
 		velocity.y -=2*jumpVelocity
 		isClimbing = false

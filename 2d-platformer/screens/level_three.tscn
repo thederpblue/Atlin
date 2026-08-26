@@ -1,0 +1,17 @@
+[gd_scene format=4 uid="uid://c06mhpw145jam"]
+
+[ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://Player.tscn" id="1_5wn08"]
+[ext_resource type="PackedScene" uid="uid://37qs5k2lowvx" path="res://tile_maps.tscn" id="2_61t61"]
+
+[node name="Node2D" type="Node2D" unique_id=935105955]
+position = Vector2(128, 75)
+
+[node name="Player" parent="." unique_id=399623464 instance=ExtResource("1_5wn08")]
+
+[node name="TileMaps" parent="." unique_id=1220223848 instance=ExtResource("2_61t61")]
+
+[node name="Terrain" parent="TileMaps" index="0" unique_id=505522502]
+tile_map_data = PackedByteArray("AAD3/wIAAgABAAMAAAD3/wMAAgABAAMAAAD4/wIAAgABAAMAAAD4/wMAAgABAAMAAAD5/wIAAgABAAMAAAD5/wMAAgABAAMAAAD6/wIAAgABAAMAAAD6/wMAAgABAAMAAAD7/wIAAgABAAMAAAD7/wMAAgABAAMAAAD8/wIAAgABAAMAAAD8/wMAAgABAAMAAAD9/wIAAgABAAMAAAD9/wMAAgABAAMAAAD+/wIAAgABAAMAAAD+/wMAAgABAAMAAAD//wIAAgABAAMAAAD//wMAAgABAAMAAAAAAAIAAgABAAMAAAAAAAMAAgABAAMAAAABAAIAAgABAAMAAAABAAMAAgABAAMAAAACAAIAAgABAAMAAAACAAMAAgABAAMAAAADAAIAAgABAAMAAAADAAMAAgABAAMAAAAEAAIAAgABAAMAAAAEAAMAAgABAAMAAAA=")
+
+[editable path="Player"]
+[editable path="TileMaps"]

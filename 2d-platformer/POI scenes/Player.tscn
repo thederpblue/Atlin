@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b6uamg64nmb2n"]
 
-[ext_resource type="Script" uid="uid://uavmsxmr3hr4" path="res://player.gd" id="1_ny23k"]
+[ext_resource type="Script" uid="uid://uavmsxmr3hr4" path="res://Misc script/player.gd" id="1_ny23k"]
 [ext_resource type="Texture2D" uid="uid://d37uqrn2brpus" path="res://textures/theo/theo150.png" id="2_7n01e"]
 [ext_resource type="Texture2D" uid="uid://c7ev1ocx6n02g" path="res://textures/theo/climb/0 dash/pixil-frame-0 (21).png" id="2_60jcy"]
 [ext_resource type="Texture2D" uid="uid://bely2njojiee2" path="res://textures/theo/falling/1 dash/theo144.png" id="2_kx5ar"]

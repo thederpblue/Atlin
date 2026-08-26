@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://nms410cgshho"]
 
-[ext_resource type="PackedScene" uid="uid://37qs5k2lowvx" path="res://tile_maps.tscn" id="1_gayso"]
-[ext_resource type="PackedScene" uid="uid://bh8aw6vjq15hd" path="res://phone_msg.tscn" id="2_e5d48"]
+[ext_resource type="PackedScene" uid="uid://37qs5k2lowvx" path="res://Misc scenes/tile_maps.tscn" id="1_gayso"]
+[ext_resource type="PackedScene" uid="uid://bh8aw6vjq15hd" path="res://Misc scenes/phone_msg.tscn" id="2_e5d48"]
 [ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://POI scenes/Player.tscn" id="3_hq4n8"]
 
 [node name="Node2D" type="Node2D" unique_id=1724168189]

@@ -20,7 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://d08sx0cjp5tgw" path="res://textures/terrain/rock.png" id="12_7al5n"]
 [ext_resource type="PackedScene" uid="uid://kfi0ye6744d" path="res://POI scenes/checkpoint.tscn" id="13_67tlw"]
 [ext_resource type="Texture2D" uid="uid://bmwqsj6wfp1nd" path="res://textures/terrain/summitNoSnow.png" id="13_g1cmp"]
-[ext_resource type="PackedScene" uid="uid://1ui7iy62s485" path="res://seeker_bat.tscn" id="21_dvb5k"]
+[ext_resource type="PackedScene" uid="uid://1ui7iy62s485" path="res://Monster scenes/seeker_bat.tscn" id="21_dvb5k"]
 [ext_resource type="Texture2D" uid="uid://ccap65s6g4np2" path="res://textures/jumpThru/dream.png" id="22_uhli1"]
 [ext_resource type="Texture2D" uid="uid://waqssmwyoxru" path="res://textures/jumpThru/moon.png" id="23_acl70"]
 [ext_resource type="Texture2D" uid="uid://b1a6afa7q8upd" path="res://textures/jumpThru/reflection.png" id="24_v6y7r"]

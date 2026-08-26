@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d447e6in274k"]
 
-[ext_resource type="Script" uid="uid://bhk2q32fcayoq" path="res://double_dash_crystal.gd" id="1_6qs1f"]
+[ext_resource type="Script" uid="uid://bhk2q32fcayoq" path="res://Misc script/double_dash_crystal.gd" id="1_6qs1f"]
 [ext_resource type="Texture2D" uid="uid://cf7xyxoq5clgm" path="res://textures/POI/dash crystal two/flash00.png" id="2_3fkvv"]
 [ext_resource type="Texture2D" uid="uid://cxb2dcqe21puu" path="res://textures/POI/dash crystal two/flash01.png" id="3_eod4s"]
 [ext_resource type="Texture2D" uid="uid://8jd2m054viwq" path="res://textures/POI/dash crystal two/flash02.png" id="4_r1n3j"]

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://1ui7iy62s485"]
 
 [ext_resource type="Texture2D" uid="uid://r701wgpnqgur" path="res://textures/monsters/predator122.png" id="1_jctby"]
-[ext_resource type="Script" uid="uid://8yn15cx0ug6k" path="res://seeker_bat.gd" id="1_tcvwy"]
+[ext_resource type="Script" uid="uid://8yn15cx0ug6k" path="res://Misc script/seeker_bat.gd" id="1_tcvwy"]
 [ext_resource type="Texture2D" uid="uid://brbhvalfawp3k" path="res://textures/monsters/pixil-frame-0.png" id="2_tcvwy"]
 [ext_resource type="Texture2D" uid="uid://cyvy6q28rcevh" path="res://textures/monsters/pixil-frame-0 (1).png" id="3_oc4h5"]
 

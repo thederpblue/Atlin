@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://dt0o33j55q2uq"]
 
-[ext_resource type="PackedScene" uid="uid://37qs5k2lowvx" path="res://tile_maps.tscn" id="1_53m1v"]
+[ext_resource type="PackedScene" uid="uid://37qs5k2lowvx" path="res://Misc scenes/tile_maps.tscn" id="1_53m1v"]
 
 [node name="Mikkel WIP" type="Node2D" unique_id=1689448321]
 

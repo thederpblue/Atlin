@@ -170,13 +170,14 @@ func jump(delta):
 	if (jumpTime > 0 and jumpTime <= maxJumpTime) and !is_on_floor():
 			velocity.y = -jumpVelocity 
 func intitialJump(delta):
-	if self.is_on_floor() || isClimbing:
+	if self.is_on_floor():
 		velocity.y -=jumpVelocity
-		if isClimbing:
-			isClimbing = false
-			isClimbJumping = true
-			await get_tree().create_timer(0.3).timeout
-			isClimbJumping = false
+	if isClimbing:
+		velocity.y -=2*jumpVelocity
+		isClimbing = false
+		isClimbJumping = true
+		await get_tree().create_timer(0.1).timeout
+		isClimbJumping = false
 
 
 func walk_left(delta):
@@ -212,7 +213,7 @@ func dash(delta):
 
 func climb(delt):
 	if is_on_wall() && !isClimbJumping:
-		velocity.y == 0
+		velocity.y = 0
 		isClimbing = true
 		
 func get_dir():

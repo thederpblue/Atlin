@@ -47,7 +47,7 @@ func _ready():
 	velocity = ScreenHolder.carry_velocity
 
 func _physics_process(delta):
-	get_node("Label").text = str(velocity)
+	#get_node("Label").text = str(velocity)
 	updateTimes(delta)
 	updateIcon()
 	applyfriction(delta)

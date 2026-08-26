@@ -5,3 +5,4 @@ func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_inde
 		body.position = body.respawnPoint
 		body.velocity = Vector2.ZERO
 		body.velocityQueue = []
+		body.dashes = body.maxDashes

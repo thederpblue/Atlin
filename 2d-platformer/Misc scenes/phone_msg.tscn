@@ -15,24 +15,41 @@ script = ExtResource("1_e373t")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=603835970]
 shape = SubResource("RectangleShape2D_q2j6n")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=778711019]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=193243078]
+
+[node name="Control" type="Control" parent="CanvasLayer" unique_id=2014816985]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Control" unique_id=778711019]
 visible = false
-position = Vector2(0, -52.999996)
-scale = Vector2(0.15, 0.15)
+position = Vector2(0, -200)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_aln0q")
 
-[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=239575992]
+[node name="Sprite2D2" type="Sprite2D" parent="CanvasLayer/Control/Sprite2D" unique_id=239575992]
 position = Vector2(-679.99994, 0)
 scale = Vector2(1.3999999, 1.3999999)
 texture = ExtResource("3_px8o6")
 
-[node name="Label" type="Label" parent="Sprite2D" unique_id=2005861488]
+[node name="Label" type="Label" parent="CanvasLayer/Control/Sprite2D" unique_id=2005861488]
 offset_left = -499.99994
 offset_top = -100.0
 offset_right = 819.99994
 offset_bottom = 119.99994
 theme_override_fonts/font = ExtResource("4_60np7")
 theme_override_font_sizes/font_size = 50
+horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

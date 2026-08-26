@@ -14,57 +14,38 @@ tile_map_data = PackedByteArray("AAAZADAAAwABAAAAAAAZADEAAgADAAAAAAAZADIABQABAAU
 [node name="POI" parent="TileMaps" index="1" unique_id=443954479]
 tile_map_data = PackedByteArray("AABVAPX/AwAAAAAAAQBVAPT/AwAAAAAAAQBVAPP/AwAAAAAAAQBVAPL/AwAAAAAAAQBVAPH/AwAAAAAAAQBVAPD/AwAAAAAAAQBVAO//AwAAAAAAAQBVAO7/AwAAAAAAAQBVAO3/AwAAAAAAAQBVAOz/AwAAAAAAAQBVAOv/AwAAAAAAAQBVAOr/AwAAAAAAAQBVAOn/AwAAAAAAAQBVAOj/AwAAAAAAAQBVAOf/AwAAAAAAAQBVAOb/AwAAAAAAAQBVAOX/AwAAAAAAAQBVAOT/AwAAAAAAAQBVAOP/AwAAAAAAAQBVAOL/AwAAAAAAAQBVAOH/AwAAAAAAAQBVAOD/AwAAAAAAAQBVAN//AwAAAAAAAQBVAN7/AwAAAAAAAQBVAN3/AwAAAAAAAQBoAPX/AwAAAAAAAQBoAPT/AwAAAAAAAQBoAPP/AwAAAAAAAQBoAPL/AwAAAAAAAQBoAPH/AwAAAAAAAQBoAPD/AwAAAAAAAQBoAO//AwAAAAAAAQBoAO7/AwAAAAAAAQBoAO3/AwAAAAAAAQBoAOz/AwAAAAAAAQBoAOv/AwAAAAAAAQBoAOr/AwAAAAAAAQBoAOn/AwAAAAAAAQBoAOj/AwAAAAAAAQBoAOf/AwAAAAAAAQBoAOb/AwAAAAAAAQBoAOX/AwAAAAAAAQBoAOT/AwAAAAAAAQBoAOP/AwAAAAAAAQBoAOL/AwAAAAAAAQBoAOH/AwAAAAAAAQBoAOD/AwAAAAAAAQBoAN//AwAAAAAAAQBoAN7/AwAAAAAAAQBoAN3/AwAAAAAAAQBoANz/AwAAAAAAAQBoANv/AwAAAAAAAQBoANr/AwAAAAAAAQBoANn/AwAAAAAAAQBoANj/AwAAAAAAAQBoANf/AwAAAAAAAQBoANb/AwAAAAAAAQBoANX/AwAAAAAAAQBoANT/AwAAAAAAAQBoANP/AwAAAAAAAQBoANL/AwAAAAAAAQBoANH/AwAAAAAAAQBoAND/AwAAAAAAAQBoAM//AwAAAAAAAQBoAM7/AwAAAAAAAQBoAM3/AwAAAAAAAQBoAMz/AwAAAAAAAQBoAMv/AwAAAAAAAQBoAMr/AwAAAAAAAQBoAMn/AwAAAAAAAQBoAMj/AwAAAAAAAQBoAMf/AwAAAAAAAQBoAMb/AwAAAAAAAQBoAMX/AwAAAAAAAQBoAMT/AwAAAAAAAQBoAMP/AwAAAAAAAQBoAML/AwAAAAAAAQBoAMH/AwAAAAAAAQBoAMD/AwAAAAAAAQBoAL//AwAAAAAAAQBnAL//AwAAAAAAAQBmAL//AwAAAAAAAQBlAL//AwAAAAAAAQBkAL//AwAAAAAAAQBjAL//AwAAAAAAAQBiAL//AwAAAAAAAQBhAL//AwAAAAAAAQBgAL//AwAAAAAAAQBfAL//AwAAAAAAAQBeAL//AwAAAAAAAQBdAL//AwAAAAAAAQBcAL//AwAAAAAAAQBbAL//AwAAAAAAAQBaAL//AwAAAAAAAQBZAL//AwAAAAAAAQBYAL//AwAAAAAAAQBXAL//AwAAAAAAAQBWAL//AwAAAAAAAQBVAL//AwAAAAAAAQBUAL//AwAAAAAAAQBTAL//AwAAAAAAAQBSAL//AwAAAAAAAQBRAL//AwAAAAAAAQBQAL//AwAAAAAAAQBPAL//AwAAAAAAAQBOAL//AwAAAAAAAQBNAL//AwAAAAAAAQBMAL//AwAAAAAAAQBLAL//AwAAAAAAAQBKAL//AwAAAAAAAQBJAL//AwAAAAAAAQBIAL//AwAAAAAAAQBHAL//AwAAAAAAAQBGAL//AwAAAAAAAQBFAL//AwAAAAAAAQBEAL//AwAAAAAAAQBDAL//AwAAAAAAAQBCAL//AwAAAAAAAQBBAL//AwAAAAAAAQBAAL//AwAAAAAAAQA/AL//AwAAAAAAAQA+AL//AwAAAAAAAQA9AL//AwAAAAAAAQA8AL//AwAAAAAAAQA7AL//AwAAAAAAAQA6AL//AwAAAAAAAQA5AL//AwAAAAAAAQA4AL//AwAAAAAAAQA3AL//AwAAAAAAAQA2AL//AwAAAAAAAQA1AL//AwAAAAAAAQA0AL//AwAAAAAAAQAzAL//AwAAAAAAAQAyAL//AwAAAAAAAQAxAL//AwAAAAAAAQAwAL//AwAAAAAAAQAvAL//AwAAAAAAAQAuAL//AwAAAAAAAQAtAL//AwAAAAAAAQAsAL//AwAAAAAAAQArAL//AwAAAAAAAQAqAL//AwAAAAAAAQApAL//AwAAAAAAAQAoAL//AwAAAAAAAQAnAL//AwAAAAAAAQAmAL//AwAAAAAAAQAlAL//AwAAAAAAAQAkAL//AwAAAAAAAQAjAL//AwAAAAAAAQAiAL//AwAAAAAAAQAhAL//AwAAAAAAAQAgAL//AwAAAAAAAQAfAL//AwAAAAAAAQAeAL//AwAAAAAAAQAdAL//AwAAAAAAAQAcAL//AwAAAAAAAQAbAL//AwAAAAAAAQAaAL//AwAAAAAAAQAZAL//AwAAAAAAAQAYAL//AwAAAAAAAQAXAL//AwAAAAAAAQAWAL//AwAAAAAAAQAVAL//AwAAAAAAAQAUAL//AwAAAAAAAQATAL//AwAAAAAAAQASAL//AwAAAAAAAQARAL//AwAAAAAAAQAQAL//AwAAAAAAAQAPAL//AwAAAAAAAQAOAL//AwAAAAAAAQANAL//AwAAAAAAAQAMAL//AwAAAAAAAQALAL//AwAAAAAAAQAKAL//AwAAAAAAAQAKAMD/AwAAAAAAAQAKAMH/AwAAAAAAAQAKAML/AwAAAAAAAQAKAMP/AwAAAAAAAQAKAMT/AwAAAAAAAQAKAMX/AwAAAAAAAQAKAMb/AwAAAAAAAQAKAMf/AwAAAAAAAQAKAMj/AwAAAAAAAQAKAMn/AwAAAAAAAQAKAMr/AwAAAAAAAQAKAMv/AwAAAAAAAQAKAMz/AwAAAAAAAQA=")
 
-[node name="Phone msg" parent="." unique_id=724468306 instance=ExtResource("2_2e61y")]
-
-[node name="Area2D" parent="Phone msg" index="0" unique_id=435140569]
-priority = 2
-
-[node name="CollisionShape2D" parent="Phone msg/Area2D" index="0" unique_id=603835970]
-position = Vector2(158, 388)
-
-[node name="Sprite2D" parent="Phone msg" index="1" unique_id=778711019]
-position = Vector2(157, 321)
-scale = Vector2(0.13, 0.13)
-
-[node name="Label" parent="Phone msg/Sprite2D" index="1" unique_id=2005861488]
-text = "Theo, the first thing you need to know about 
-montain climbing is to use Arrow Key to move 
-and Z to jump!"
-horizontal_alignment = 1
-
-[node name="Phone msg2" parent="." unique_id=89344626 instance=ExtResource("2_2e61y")]
-
-[node name="CollisionShape2D" parent="Phone msg2/Area2D" parent_id_path=PackedInt32Array(89344626, 435140569) index="0" unique_id=603835970]
-position = Vector2(358, 291)
-scale = Vector2(3, 1)
-
-[node name="Sprite2D" parent="Phone msg2" index="1" unique_id=778711019]
-position = Vector2(358, 223.00002)
-
-[node name="Label" parent="Phone msg2/Sprite2D" index="1" unique_id=2005861488]
-text = "To clear larger gaps use C aswell as 
-your movement keys to dash"
-horizontal_alignment = 1
-
-[node name="Phone msg3" parent="." unique_id=134665370 instance=ExtResource("2_2e61y")]
-
-[node name="CollisionShape2D" parent="Phone msg3/Area2D" parent_id_path=PackedInt32Array(134665370, 435140569) index="0" unique_id=603835970]
-position = Vector2(471, 90)
-scale = Vector2(8, 1)
-
-[node name="Sprite2D" parent="Phone msg3" index="1" unique_id=778711019]
-position = Vector2(471, 7.999996)
-
-[node name="Label" parent="Phone msg3/Sprite2D" index="1" unique_id=2005861488]
-text = "The last thing you need to know before i let you
-climb is to hold SHIFT on walls to grab them,
-jump while on wall to climb up them"
-horizontal_alignment = 1
-
 [node name="Player" parent="." unique_id=399623464 instance=ExtResource("3_hosbx")]
 position = Vector2(157, 385)
 
+[node name="move msg" parent="." unique_id=724468306 instance=ExtResource("2_2e61y")]
+
+[node name="CollisionShape2D" parent="move msg/Area2D" parent_id_path=PackedInt32Array(724468306, 435140569) index="0" unique_id=603835970]
+position = Vector2(164, 388)
+
+[node name="Label" parent="move msg/CanvasLayer/Control/Sprite2D" parent_id_path=PackedInt32Array(724468306, 778711019) index="1" unique_id=2005861488]
+text = "Hey Theo, to MOVE use ⬆️⬇️⬅️➡️, to JUMP use Z"
+
+[node name="dash msg" parent="." unique_id=803500802 instance=ExtResource("2_2e61y")]
+
+[node name="CollisionShape2D" parent="dash msg/Area2D" parent_id_path=PackedInt32Array(803500802, 435140569) index="0" unique_id=603835970]
+position = Vector2(357.00003, 282)
+scale = Vector2(3, 3)
+
+[node name="Label" parent="dash msg/CanvasLayer/Control/Sprite2D" parent_id_path=PackedInt32Array(803500802, 778711019) index="1" unique_id=2005861488]
+text = "To clear larger gaps dashing is helpfull.
+Use ⬆️⬇️⬅️➡️ and C to dash!"
+
+[node name="climb msg" parent="." unique_id=1539516187 instance=ExtResource("2_2e61y")]
+
+[node name="CollisionShape2D" parent="climb msg/Area2D" parent_id_path=PackedInt32Array(1539516187, 435140569) index="0" unique_id=603835970]
+position = Vector2(417.00003, 108)
+scale = Vector2(15, 2)
+
+[node name="Label" parent="climb msg/CanvasLayer/Control/Sprite2D" parent_id_path=PackedInt32Array(1539516187, 778711019) index="1" unique_id=2005861488]
+text = "Use X while close to a wall to grab it.
+Use ⬇️⬆️while holding a wall to climb it!"
+
 [editable path="TileMaps"]
-[editable path="Phone msg"]
-[editable path="Phone msg2"]
-[editable path="Phone msg3"]
+[editable path="move msg"]
+[editable path="dash msg"]
+[editable path="climb msg"]

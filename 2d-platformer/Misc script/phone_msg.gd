@@ -17,7 +17,7 @@ func _process(delta):
 	if player != null:
 		if inArea and player.is_on_floor():
 			player.lookingAtPhone = true
-			get_node("Sprite2D").visible = true
+			get_node("CanvasLayer/Control/Sprite2D").visible = true
 		else:
 			player.lookingAtPhone = false
-			get_node("Sprite2D").visible = false
+			get_node("CanvasLayer/Control/Sprite2D").visible = false

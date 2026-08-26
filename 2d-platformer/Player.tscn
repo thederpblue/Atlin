@@ -42,6 +42,7 @@
 [ext_resource type="Texture2D" uid="uid://bywfrkqqpd38h" path="res://textures/theo/theoWalk2.png" id="36_17lw4"]
 [ext_resource type="Texture2D" uid="uid://cxyq7tnepn8fn" path="res://textures/theo/theoWalk3.png" id="37_45q2m"]
 [ext_resource type="Texture2D" uid="uid://iikoltoxqttp" path="res://textures/theo/theoWalk4.png" id="38_3kfh8"]
+[ext_resource type="Texture2D" uid="uid://c5t0l8jpxwdw" path="res://textures/theo/theo126.png" id="39_fhngp"]
 [ext_resource type="Texture2D" uid="uid://b2xsx6nxaid0" path="res://textures/theo/theoWalk5.png" id="39_p8xv4"]
 [ext_resource type="Texture2D" uid="uid://ciokkmf1bjvxl" path="res://textures/theo/theoWalk6.png" id="40_0qnyw"]
 
@@ -169,6 +170,14 @@ animations = [{
 "speed": 5.0
 }, {
 "frames": [{
+"duration": 3.0,
+"texture": ExtResource("39_fhngp")
+}],
+"loop": 1,
+"name": &"Phone_msg",
+"speed": 1.0
+}, {
+"frames": [{
 "duration": 1.0,
 "texture": ExtResource("35_bluek")
 }, {
@@ -206,8 +215,7 @@ script = ExtResource("1_gueye")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=631297549]
 sprite_frames = SubResource("SpriteFrames_gueye")
-animation = &"Idle"
-frame_progress = 0.07459373
+animation = &"Phone_msg"
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="player" unique_id=1713399803]
 emitting = false

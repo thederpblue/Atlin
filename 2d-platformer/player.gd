@@ -1,5 +1,7 @@
 extends CharacterBody2D
 
+
+var respawning = false
 var was_left = false
 var was_right = false
 
@@ -21,7 +23,7 @@ var fallMaxSpeed = 160
 var airTime = 0
 
 var gravity = 900
-var maxSlowFallSpeed = 320
+var maxSlowFallSpeed = 200
 var maxFastFallSpeed = 480
 var currentMaxFallSpeed = maxSlowFallSpeed
 
@@ -49,7 +51,13 @@ var lookingAtPhone = false
 @onready var col_shape_node := $CollisionShape2D
 
 func respawn():
-	get_tree().change_scene_to_file(ScreenHolder.screenList[ScreenHolder.currentScreen])
+	respawning = true
+	get_node("AnimatedSprite2D").play("Death")
+	ScreenHolder.currentScreenName = get_tree().current_scene.scene_file_path
+	ScreenHolder.carry_velocity = Vector2.ZERO
+	await get_tree().create_timer(2.2).timeout
+	get_tree().change_scene_to_file(ScreenHolder.currentScreenName)
+	
 
 
 func _ready():
@@ -57,56 +65,57 @@ func _ready():
 	velocity = ScreenHolder.carry_velocity
 
 func _physics_process(delta):
-	#get_node("Label").text = str(position)
-	updateTimes(delta)
-	updateIcon()
-	applyfriction(delta)
-	applyGravity(delta)
-	updateDashes(delta)
-	updateVelocityQueue(delta) 
-	updateClimbing(delta)
-	
-	
-	
-	
-	#DETECT MOVEMENT
-	var left = Input.is_action_pressed("left")
-	var right = Input.is_action_pressed("right")
-	
-	jumpTime += delta
-	if Input.is_action_pressed("jump"):
-		jump(delta)
-	if Input.is_action_just_pressed("jump"):
-		intitialJump(delta)
-	elif is_on_floor():
-		jumpTime = 0
-	if left:
-		walk_left(delta)
-	if right:
-		walk_right(delta)
-	if (was_left || was_right) and !left and !right:
-		stop_walk()
-	if Input.is_action_just_pressed("dash") and dashes >  0 and timeSinceDash > dashCooldown:
-		dash(delta)
-	if Input.is_action_pressed("grab"):
-		climb(delta)
-	if Input.is_action_just_released("grab"):
-		isClimbing = false
-	if Input.is_action_pressed("up") && isClimbing && !isClimbJumping:
-		climb_up(delta)
-	if Input.is_action_pressed("down") && isClimbing && !isClimbJumping:
-		climb_down(delta)
-	if Input.is_action_pressed("down"):
-		currentMaxFallSpeed = maxFastFallSpeed
-	else:
-		currentMaxFallSpeed = maxSlowFallSpeed
-	
-	
-	was_left = left
-	was_right = right
-	
-	# APPLY MOVEMENT
-	move_and_slide()
+	if not respawning:
+		#get_node("Label").text = str(velocity)
+		updateTimes(delta)
+		updateIcon()
+		applyfriction(delta)
+		applyGravity(delta)
+		updateDashes(delta)
+		updateVelocityQueue(delta) 
+		updateClimbing(delta)
+		
+		
+		
+		
+		#DETECT MOVEMENT
+		var left = Input.is_action_pressed("left")
+		var right = Input.is_action_pressed("right")
+		
+		jumpTime += delta
+		if Input.is_action_pressed("jump"):
+			jump(delta)
+		if Input.is_action_just_pressed("jump"):
+			intitialJump(delta)
+		elif is_on_floor():
+			jumpTime = 0
+		if left:
+			walk_left(delta)
+		if right:
+			walk_right(delta)
+		if (was_left || was_right) and !left and !right:
+			stop_walk()
+		if Input.is_action_just_pressed("dash") and dashes >  0 and timeSinceDash > dashCooldown:
+			dash(delta)
+		if Input.is_action_pressed("grab"):
+			climb(delta)
+		if Input.is_action_just_released("grab"):
+			isClimbing = false
+		if Input.is_action_pressed("up") && isClimbing && !isClimbJumping:
+			climb_up(delta)
+		if Input.is_action_pressed("down") && isClimbing && !isClimbJumping:
+			climb_down(delta)
+		if Input.is_action_pressed("down"):
+			currentMaxFallSpeed = maxFastFallSpeed
+		else:
+			currentMaxFallSpeed = maxSlowFallSpeed
+		
+		
+		was_left = left
+		was_right = right
+		
+		# APPLY MOVEMENT
+		move_and_slide()
 	
 func updateVelocityQueue(delta):
 	for i in range(velocityQueue.size() - 1, -1, -1):
@@ -152,22 +161,23 @@ func applyfriction(delta):
 			velocity.x += delta * decelerationAboveMax
 	
 func updateIcon():
-	if lookingAtPhone:
-		get_node("AnimatedSprite2D").play("Phone_msg")
-	elif velocity.y > 500:
-		get_node("AnimatedSprite2D").play("Falling")
-	elif dashes == 2:
-		get_node("AnimatedSprite2D").play("WalkingTwoDash")
-	elif velocity != Vector2.ZERO and dashes == 1:
-		get_node("AnimatedSprite2D").play("WalkingOneDash")
-	elif velocity != Vector2.ZERO and dashes == 0:
-		get_node("AnimatedSprite2D").play("WalkingNoDash")
-	elif is_on_floor():
-		get_node("AnimatedSprite2D").play("Idle")
-	if timeSinceDash > 0.25:
-		get_node("GPUParticles2D").emitting = false
-	else:
-		get_node("GPUParticles2D").emitting = true
+	if not respawning:
+		if lookingAtPhone:
+			get_node("AnimatedSprite2D").play("Phone_msg")
+		elif isClimbing:
+			get_node("AnimatedSprite2D").play("Climb1")
+			if velocity.y == 0:
+				get_node("AnimatedSprite2D").pause()
+		elif velocity.y >= 200:
+			get_node("AnimatedSprite2D").play("Falling" + str(dashes))
+		elif velocity != Vector2.ZERO:
+			get_node("AnimatedSprite2D").play("Walking" + str(dashes))
+		elif is_on_floor():
+			get_node("AnimatedSprite2D").play("Idle")
+		if timeSinceDash > 0.25:
+			get_node("GPUParticles2D").emitting = false
+		else:
+			get_node("GPUParticles2D").emitting = true
 	
 
 func updateTimes(delta):

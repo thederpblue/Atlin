@@ -1,0 +1,15 @@
+[gd_scene format=4 uid="uid://w71wt8r8fge6"]
+
+[ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://POI scenes/Player.tscn" id="1_e25bv"]
+[ext_resource type="PackedScene" uid="uid://37qs5k2lowvx" path="res://tile_maps.tscn" id="2_tevef"]
+
+[node name="TestScreen" type="Node2D" unique_id=1407784480]
+
+[node name="Player" parent="." unique_id=399623464 instance=ExtResource("1_e25bv")]
+
+[node name="TileMaps" parent="." unique_id=1220223848 instance=ExtResource("2_tevef")]
+
+[node name="Terrain" parent="TileMaps" index="0" unique_id=505522502]
+tile_map_data = PackedByteArray("AAD+/wIAAgAAAAAAAAD//wIAAgABAAAAAAAAAAIAAgACAAAAAAABAAIAAgADAAAAAAACAAIAAgAAAAAAAAADAAIAAgABAAAAAAA=")
+
+[editable path="TileMaps"]

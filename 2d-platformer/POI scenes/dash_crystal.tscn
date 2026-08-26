@@ -69,7 +69,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l0bqs"]
-size = Vector2(10, 10)
+size = Vector2(12, 12)
 
 [node name="Dash Crystal" type="Node2D" unique_id=1500967729]
 script = ExtResource("1_wnogr")

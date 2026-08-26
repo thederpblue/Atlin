@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dwprwaxgm871b" path="res://textures/terrain/dirt.png" id="6_4ijjx"]
 [ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://Player.tscn" id="6_04x00"]
 [ext_resource type="PackedScene" uid="uid://dqbdiw1wdscr5" path="res://spike.tscn" id="6_14wfa"]
+[ext_resource type="PackedScene" uid="uid://isc0ymrhh8x6" path="res://OOB.tscn" id="7_gb46f"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_14wfa"]
 tile_data = PackedInt32Array(0, 0, 0, 65536, 327680, 0, 131072, 327680, 1, 196608, 327680, 2, 262144, 327680, 3, 327680, 327680, 4, 393216, 327680, 5, 458752, 327680, 6, 524288, 327680, 7, 589824, 327680, 8, 655360, 327680, 9, 720896, 327680, 10, 786432, 327680, 11, 851968, 327680, 12, 917504, 327680, 13, 983040, 327680, 14)
@@ -1166,6 +1167,10 @@ pattern_7 = SubResource("TileMapPattern_67tlw")
 pattern_8 = SubResource("TileMapPattern_exrhb")
 pattern_9 = SubResource("TileMapPattern_1ux2b")
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_67tlw"]
+resource_name = "OOB"
+scenes/1/scene = ExtResource("7_gb46f")
+
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_g2g2v"]
 resource_name = "double_dash_crystal"
 scenes/1/scene = ExtResource("3_q7vjg")
@@ -1195,6 +1200,7 @@ sources/2 = SubResource("TileSetScenesCollectionSource_oodp6")
 sources/3 = SubResource("TileSetScenesCollectionSource_adeds")
 sources/4 = SubResource("TileSetScenesCollectionSource_4ijjx")
 sources/5 = SubResource("TileSetScenesCollectionSource_8omh0")
+sources/0 = SubResource("TileSetScenesCollectionSource_67tlw")
 
 [node name="TileMaps" type="Node2D" unique_id=1220223848]
 

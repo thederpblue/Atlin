@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://d08sx0cjp5tgw" path="res://textures/terrain/rock.png" id="12_7al5n"]
 [ext_resource type="PackedScene" uid="uid://kfi0ye6744d" path="res://POI scenes/checkpoint.tscn" id="13_67tlw"]
 [ext_resource type="Texture2D" uid="uid://bmwqsj6wfp1nd" path="res://textures/terrain/summitNoSnow.png" id="13_g1cmp"]
+[ext_resource type="PackedScene" uid="uid://1ui7iy62s485" path="res://seeker_bat.tscn" id="21_dvb5k"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_14wfa"]
 tile_data = PackedInt32Array(0, 0, 0, 65536, 327680, 0, 131072, 327680, 1, 196608, 327680, 2, 262144, 327680, 3, 327680, 327680, 4, 393216, 327680, 5, 458752, 327680, 6, 524288, 327680, 7, 589824, 327680, 8, 655360, 327680, 9, 720896, 327680, 10, 786432, 327680, 11, 851968, 327680, 12, 917504, 327680, 13, 983040, 327680, 14)
@@ -2562,6 +2563,13 @@ sources/5 = SubResource("TileSetScenesCollectionSource_8omh0")
 sources/0 = SubResource("TileSetScenesCollectionSource_67tlw")
 sources/6 = SubResource("TileSetScenesCollectionSource_exrhb")
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_ai720"]
+resource_name = "seeker_bat"
+scenes/1/scene = ExtResource("21_dvb5k")
+
+[sub_resource type="TileSet" id="TileSet_bgr0v"]
+sources/0 = SubResource("TileSetScenesCollectionSource_ai720")
+
 [node name="TileMaps" type="Node2D" unique_id=1220223848]
 
 [node name="Terrain" type="TileMapLayer" parent="." unique_id=505522502]
@@ -2569,3 +2577,6 @@ tile_set = SubResource("TileSet_w5h02")
 
 [node name="POI" type="TileMapLayer" parent="." unique_id=443954479]
 tile_set = SubResource("TileSet_8omh0")
+
+[node name="Monsters" type="TileMapLayer" parent="." unique_id=828283376]
+tile_set = SubResource("TileSet_bgr0v")

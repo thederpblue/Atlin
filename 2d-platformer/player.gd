@@ -48,12 +48,16 @@ var lookingAtPhone = false
 
 @onready var col_shape_node := $CollisionShape2D
 
+func respawn():
+	get_tree().change_scene_to_file(ScreenHolder.screenList[ScreenHolder.currentScreen])
+
+
 func _ready():
 	respawnPoint = position 
 	velocity = ScreenHolder.carry_velocity
 
 func _physics_process(delta):
-	#get_node("Label").text = str(velocity)
+	#get_node("Label").text = str(position)
 	updateTimes(delta)
 	updateIcon()
 	applyfriction(delta)

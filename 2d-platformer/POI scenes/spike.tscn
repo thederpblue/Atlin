@@ -14,12 +14,20 @@ script = ExtResource("1_7k7bx")
 position = Vector2(0, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=82007514]
-position = Vector2(-0.5, 2)
+position = Vector2(0, 2)
 scale = Vector2(1, 0.5)
 shape = SubResource("RectangleShape2D_l0bqs")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1211116557]
-position = Vector2(0, -1)
+position = Vector2(0.5, -1)
 texture = ExtResource("1_8ryga")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1386775185]
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+offset_transform_enabled = true
+color = Color(1, 1, 1, 0)
 
 [connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

@@ -162,7 +162,7 @@ func updateIcon():
 		get_node("AnimatedSprite2D").play("WalkingOneDash")
 	elif velocity != Vector2.ZERO and dashes == 0:
 		get_node("AnimatedSprite2D").play("WalkingNoDash")
-	else:
+	elif is_on_floor():
 		get_node("AnimatedSprite2D").play("Idle")
 	if timeSinceDash > 0.25:
 		get_node("GPUParticles2D").emitting = false

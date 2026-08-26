@@ -2,16 +2,20 @@
 
 [ext_resource type="Script" uid="uid://uavmsxmr3hr4" path="res://player.gd" id="1_ny23k"]
 [ext_resource type="Texture2D" uid="uid://d37uqrn2brpus" path="res://textures/theo/theo150.png" id="2_7n01e"]
+[ext_resource type="Texture2D" uid="uid://c7ev1ocx6n02g" path="res://textures/theo/climb/0 dash/pixil-frame-0 (21).png" id="2_60jcy"]
 [ext_resource type="Texture2D" uid="uid://bely2njojiee2" path="res://textures/theo/falling/1 dash/theo144.png" id="2_kx5ar"]
 [ext_resource type="Texture2D" uid="uid://bttnm4acjfu24" path="res://textures/theo/climb/1 dash/pixil-frame-0 (10).png" id="2_t36gu"]
 [ext_resource type="Texture2D" uid="uid://dm7d6yoi6hudj" path="res://textures/theo/falling/1 dash/theo145.png" id="3_53e6n"]
 [ext_resource type="Texture2D" uid="uid://ch1il75vawhob" path="res://textures/theo/climb/1 dash/pixil-frame-0 (11).png" id="3_3304e"]
+[ext_resource type="Texture2D" uid="uid://odsphvi127kv" path="res://textures/theo/climb/0 dash/pixil-frame-0 (19).png" id="3_udlh4"]
 [ext_resource type="Texture2D" uid="uid://0tggoc7p5ia3" path="res://textures/theo/theo151.png" id="3_x6813"]
 [ext_resource type="Texture2D" uid="uid://dows12gitxia0" path="res://textures/theo/falling/1 dash/theo146.png" id="4_3to87"]
+[ext_resource type="Texture2D" uid="uid://kgonh6n1puia" path="res://textures/theo/climb/0 dash/pixil-frame-0 (17).png" id="4_8fu4r"]
 [ext_resource type="Texture2D" uid="uid://2sghdsqjvxd7" path="res://textures/theo/climb/1 dash/pixil-frame-0 (12).png" id="4_iybwc"]
 [ext_resource type="Texture2D" uid="uid://dc3is40kslunk" path="res://textures/theo/theo153.png" id="4_l481o"]
 [ext_resource type="Texture2D" uid="uid://b004w8qrfoanw" path="res://textures/theo/falling/1 dash/theo147.png" id="5_0k1a1"]
 [ext_resource type="Texture2D" uid="uid://ccbos7ltmib72" path="res://textures/theo/theo154.png" id="5_6o1qc"]
+[ext_resource type="Texture2D" uid="uid://c7y4fnxyi6sej" path="res://textures/theo/climb/0 dash/pixil-frame-0 (15).png" id="5_s3wod"]
 [ext_resource type="Texture2D" uid="uid://dp7bh520biy" path="res://textures/theo/climb/1 dash/pixil-frame-0 (13).png" id="5_y8wam"]
 [ext_resource type="Texture2D" uid="uid://cb4afvvo066rv" path="res://textures/theo/theoIdle2.png" id="6_enseh"]
 [ext_resource type="Texture2D" uid="uid://bs0tsg8sxa4e6" path="res://textures/theo/theo155.png" id="6_t67so"]
@@ -22,11 +26,15 @@
 [ext_resource type="Texture2D" uid="uid://bdpjmces7454b" path="res://textures/theo/death/death_h12.png" id="9_l481o"]
 [ext_resource type="Texture2D" uid="uid://u7cb8je5iphu" path="res://textures/theo/theoIdle4.png" id="9_x6813"]
 [ext_resource type="Texture2D" uid="uid://r4cmwjx7lv31" path="res://textures/theo/falling/0 dash/pixil-frame-0 (1).png" id="10_8cbtv"]
+[ext_resource type="Texture2D" uid="uid://c37oeickk6buj" path="res://textures/theo/climb/2 dash/pixil-frame-0 (20).png" id="10_71qbx"]
 [ext_resource type="Texture2D" uid="uid://c6hrcuxgxad0c" path="res://textures/theo/theoIdle6.png" id="10_l481o"]
 [ext_resource type="Texture2D" uid="uid://bihbxg4nk5ihs" path="res://textures/theo/falling/0 dash/pixil-frame-0 (2).png" id="11_4ine5"]
 [ext_resource type="Texture2D" uid="uid://c8frqvghfk1lg" path="res://textures/theo/theoIdle7.png" id="11_6o1qc"]
+[ext_resource type="Texture2D" uid="uid://dt137uyli5ooe" path="res://textures/theo/climb/2 dash/pixil-frame-0 (18).png" id="11_8xsta"]
 [ext_resource type="Texture2D" uid="uid://cu70rfvjw1fmq" path="res://textures/theo/falling/0 dash/pixil-frame-0 (3).png" id="12_48kwd"]
+[ext_resource type="Texture2D" uid="uid://rnictwu0yie8" path="res://textures/theo/climb/2 dash/pixil-frame-0 (16).png" id="12_cqcwh"]
 [ext_resource type="Texture2D" uid="uid://bhi1s18mk05uo" path="res://textures/theo/theoIdle8.png" id="12_t67so"]
+[ext_resource type="Texture2D" uid="uid://ef5ghybvofnu" path="res://textures/theo/climb/2 dash/pixil-frame-0 (14).png" id="13_ns6hw"]
 [ext_resource type="Texture2D" uid="uid://dhww3oxus2cw" path="res://textures/theo/theoIdle9.png" id="13_oan05"]
 [ext_resource type="Texture2D" uid="uid://hthhd8pk3fwj" path="res://textures/theo/falling/0 dash/pixil-frame-0.png" id="13_qejbu"]
 [ext_resource type="Texture2D" uid="uid://bq1n86frn02c1" path="res://textures/theo/theoIdle10.png" id="14_irxfm"]
@@ -84,6 +92,23 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_60jcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_udlh4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_8fu4r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_s3wod")
+}],
+"loop": 1,
+"name": &"Climb0",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("2_t36gu")
 }, {
 "duration": 1.0,
@@ -97,7 +122,24 @@ animations = [{
 }],
 "loop": 1,
 "name": &"Climb1",
-"speed": 5.0
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_71qbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8xsta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_cqcwh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ns6hw")
+}],
+"loop": 1,
+"name": &"Climb2",
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -389,8 +431,7 @@ script = ExtResource("1_ny23k")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=631297549]
 sprite_frames = SubResource("SpriteFrames_gueye")
-animation = &"Climb1"
-frame_progress = 0.41436118
+animation = &"Climb2"
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="player" unique_id=1713399803]
 emitting = false

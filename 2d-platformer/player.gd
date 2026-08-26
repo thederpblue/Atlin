@@ -55,8 +55,9 @@ func respawn():
 	get_node("AnimatedSprite2D").play("Death")
 	ScreenHolder.currentScreenName = get_tree().current_scene.scene_file_path
 	ScreenHolder.carry_velocity = Vector2.ZERO
+	var tree = get_tree()
 	await get_tree().create_timer(2.2).timeout
-	get_tree().change_scene_to_file(ScreenHolder.currentScreenName)
+	tree.change_scene_to_file(ScreenHolder.currentScreenName)
 	
 
 
@@ -165,7 +166,10 @@ func updateIcon():
 		if lookingAtPhone:
 			get_node("AnimatedSprite2D").play("Phone_msg")
 		elif isClimbing:
-			get_node("AnimatedSprite2D").play("Climb1")
+			if velocity.y < 0:
+				get_node("AnimatedSprite2D").play("Climb" + str(dashes))
+			elif velocity.y > 0:
+				get_node("AnimatedSprite2D").play_backwards("Climb" + str(dashes))
 			if velocity.y == 0:
 				get_node("AnimatedSprite2D").pause()
 		elif velocity.y >= 200:

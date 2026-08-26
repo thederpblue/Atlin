@@ -58,9 +58,7 @@ func _physics_process(delta):
 	
 	
 	
-	#DETECT OOB
-	if position.y > 300:
-		position = respawnPoint
+	
 	#DETECT MOVEMENT
 	var left = Input.is_action_pressed("left")
 	var right = Input.is_action_pressed("right")

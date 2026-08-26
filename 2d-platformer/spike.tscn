@@ -7,14 +7,18 @@
 size = Vector2(10, 10)
 
 [node name="Spike" type="Node2D" unique_id=1500967729]
+visibility_layer = 2
 script = ExtResource("1_7k7bx")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=2011746178]
+position = Vector2(0, -1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=82007514]
+position = Vector2(0, -1)
 shape = SubResource("RectangleShape2D_l0bqs")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1211116557]
+position = Vector2(0, -1)
 texture = ExtResource("1_8ryga")
 
 [connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

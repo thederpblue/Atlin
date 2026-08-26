@@ -16,8 +16,6 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="2d platformer"
 run/main_scene="uid://2hhp8nnmjoet"
-run/main_scene="uid://qbwmg7q1o1gy"
-
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

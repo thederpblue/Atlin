@@ -21,9 +21,15 @@ var fallMaxSpeed = 160
 var airTime = 0
 
 var gravity = 900
+var maxSlowFallSpeed = 320
+var maxFastFallSpeed = 480
+var currentMaxFallSpeed = maxSlowFallSpeed
 
 var isClimbing = false
 var isClimbJumping = false
+var maxClimbVelocity = 90
+var climbAcceleration = 1000
+
 
 var maxWalkVelocity = 90
 var walkAcceleration = 1000
@@ -82,6 +88,15 @@ func _physics_process(delta):
 		climb(delta)
 	if Input.is_action_just_released("grab"):
 		isClimbing = false
+	if Input.is_action_pressed("up") && isClimbing && !isClimbJumping:
+		climb_up(delta)
+	if Input.is_action_pressed("down") && isClimbing && !isClimbJumping:
+		climb_down(delta)
+	if Input.is_action_pressed("down"):
+		currentMaxFallSpeed = maxFastFallSpeed
+	else:
+		currentMaxFallSpeed = maxSlowFallSpeed
+	
 	
 	was_left = left
 	was_right = right
@@ -120,7 +135,10 @@ func updateClimbing(delta):
 	
 func applyGravity(delta):
 	if velocityBlock <= 0 && !isClimbing:
-		velocity.y += gravity * delta
+		if velocity.y + gravity * delta > currentMaxFallSpeed:
+			velocity.y = currentMaxFallSpeed
+		else:
+			velocity.y += gravity * delta
 
 func applyfriction(delta):
 	if velocityBlock <= 0 and is_on_floor():
@@ -199,11 +217,25 @@ func dash(delta):
 	timeOnFloor = -0.25
 	timeSinceDash = 0
 
-func climb(delt):
+func climb(delta):
 	if is_on_wall() && !isClimbJumping:
 		velocity.y = 0
 		isClimbing = true
-		
+
+func climb_up(delta):
+	if abs(velocity.y) < maxClimbVelocity:
+			if abs(velocity.y - (climbAcceleration * delta)) > maxClimbVelocity:
+				velocity.y = -maxClimbVelocity
+			else:
+				velocity.y -= climbAcceleration * delta
+
+func climb_down(delta):
+	if abs(velocity.y) < maxClimbVelocity:
+			if abs(velocity.y + (climbAcceleration * delta)) > maxClimbVelocity:
+				velocity.y = +maxClimbVelocity
+			else:
+				velocity.y += climbAcceleration * delta	
+
 func get_dir():
 	var dir = Vector2(0,0)
 	if Input.is_action_pressed("left"):

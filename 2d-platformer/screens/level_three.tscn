@@ -1,6 +1,6 @@
 [gd_scene format=4 uid="uid://do35ve5daxjxd"]
 
-[ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://Player.tscn" id="1_25m2v"]
+[ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://POI scenes/Player.tscn" id="1_25m2v"]
 [ext_resource type="PackedScene" uid="uid://37qs5k2lowvx" path="res://tile_maps.tscn" id="2_pu6qy"]
 
 [node name="Node2D" type="Node2D" unique_id=1724168189]

@@ -152,6 +152,8 @@ func updateIcon():
 		get_node("AnimatedSprite2D").play("Phone_msg")
 	elif velocity.y > 500:
 		get_node("AnimatedSprite2D").play("Falling")
+	elif dashes == 2:
+		get_node("AnimatedSprite2D").play("WalkingTwoDash")
 	elif velocity != Vector2.ZERO and dashes == 1:
 		get_node("AnimatedSprite2D").play("WalkingOneDash")
 	elif velocity != Vector2.ZERO and dashes == 0:

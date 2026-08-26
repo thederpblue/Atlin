@@ -52,6 +52,13 @@
 [ext_resource type="Texture2D" uid="uid://ngubwbiawhxa" path="res://textures/theo/theo 0 dashes/PC___Computer_-_Celeste_-_Non-Playable_Characters_-_Theo26.png" id="44_ffn1m"]
 [ext_resource type="Texture2D" uid="uid://b4oahy3j6e2sm" path="res://textures/theo/theo 0 dashes/PC___Computer_-_Celeste_-_Non-Playable_Characters_-_Theo27.png" id="45_mft6i"]
 [ext_resource type="Texture2D" uid="uid://c4c8mmhqm6tfv" path="res://textures/theo/theo 0 dashes/PC___Computer_-_Celeste_-_Non-Playable_Characters_-_Theo28.png" id="46_ctv73"]
+[ext_resource type="Texture2D" uid="uid://be6tcwcskx76k" path="res://textures/theo/theo 2 dashes/PC___Computer_-_Celeste_-_Non-Playable_Characters_-_Theo1_pink22.png" id="53_1ofp1"]
+[ext_resource type="Texture2D" uid="uid://b37wcuxalkr3m" path="res://textures/theo/theo 2 dashes/PC___Computer_-_Celeste_-_Non-Playable_Characters_-_Theo1_pink23.png" id="54_vh7e4"]
+[ext_resource type="Texture2D" uid="uid://dvovbrjo3sh7t" path="res://textures/theo/theo 2 dashes/PC___Computer_-_Celeste_-_Non-Playable_Characters_-_Theo1_pink24.png" id="55_dbi5o"]
+[ext_resource type="Texture2D" uid="uid://ctpdpljtui3x7" path="res://textures/theo/theo 2 dashes/PC___Computer_-_Celeste_-_Non-Playable_Characters_-_Theo1_pink25.png" id="56_ud5ta"]
+[ext_resource type="Texture2D" uid="uid://d0r2edcj7csmg" path="res://textures/theo/theo 2 dashes/PC___Computer_-_Celeste_-_Non-Playable_Characters_-_Theo1_pink26.png" id="57_abyjm"]
+[ext_resource type="Texture2D" uid="uid://ch3in88yjo670" path="res://textures/theo/theo 2 dashes/PC___Computer_-_Celeste_-_Non-Playable_Characters_-_Theo1_pink27.png" id="58_5p6yf"]
+[ext_resource type="Texture2D" uid="uid://dvl6kigjjin2h" path="res://textures/theo/theo 2 dashes/PC___Computer_-_Celeste_-_Non-Playable_Characters_-_Theo1_pink28.png" id="59_sfhhg"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_gueye"]
 animations = [{
@@ -232,6 +239,32 @@ animations = [{
 "loop": 1,
 "name": &"WalkingOneDash",
 "speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("53_1ofp1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_vh7e4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_dbi5o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_ud5ta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_abyjm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_5p6yf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_sfhhg")
+}],
+"loop": 1,
+"name": &"WalkingTwoDash",
+"speed": 5.0
 }]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_3tfrk"]
@@ -248,7 +281,7 @@ script = ExtResource("1_gueye")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=631297549]
 sprite_frames = SubResource("SpriteFrames_gueye")
-animation = &"WalkingNoDash"
+animation = &"WalkingTwoDash"
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="player" unique_id=1713399803]
 emitting = false

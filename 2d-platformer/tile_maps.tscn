@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://Player.tscn" id="6_04x00"]
 [ext_resource type="PackedScene" uid="uid://dqbdiw1wdscr5" path="res://spike.tscn" id="6_14wfa"]
 [ext_resource type="PackedScene" uid="uid://isc0ymrhh8x6" path="res://OOB.tscn" id="7_gb46f"]
+[ext_resource type="PackedScene" uid="uid://kfi0ye6744d" path="res://checkpoint.tscn" id="13_67tlw"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_14wfa"]
 tile_data = PackedInt32Array(0, 0, 0, 65536, 327680, 0, 131072, 327680, 1, 196608, 327680, 2, 262144, 327680, 3, 327680, 327680, 4, 393216, 327680, 5, 458752, 327680, 6, 524288, 327680, 7, 589824, 327680, 8, 655360, 327680, 9, 720896, 327680, 10, 786432, 327680, 11, 851968, 327680, 12, 917504, 327680, 13, 983040, 327680, 14)
@@ -1191,6 +1192,10 @@ scenes/1/scene = ExtResource("6_04x00")
 resource_name = "spike"
 scenes/1/scene = ExtResource("6_14wfa")
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_exrhb"]
+resource_name = "checkpoint"
+scenes/1/scene = ExtResource("13_67tlw")
+
 [sub_resource type="TileSet" id="TileSet_8omh0"]
 tile_size = Vector2i(8, 6)
 physics_layer_0/collision_layer = 2
@@ -1201,6 +1206,7 @@ sources/3 = SubResource("TileSetScenesCollectionSource_adeds")
 sources/4 = SubResource("TileSetScenesCollectionSource_4ijjx")
 sources/5 = SubResource("TileSetScenesCollectionSource_8omh0")
 sources/0 = SubResource("TileSetScenesCollectionSource_67tlw")
+sources/6 = SubResource("TileSetScenesCollectionSource_exrhb")
 
 [node name="TileMaps" type="Node2D" unique_id=1220223848]
 

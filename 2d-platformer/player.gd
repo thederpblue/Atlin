@@ -150,7 +150,7 @@ func applyfriction(delta):
 func updateIcon():
 	if lookingAtPhone:
 		get_node("AnimatedSprite2D").play("Phone_msg")
-	elif velocity.y > 0:
+	elif velocity.y > 500:
 		get_node("AnimatedSprite2D").play("Falling")
 	elif velocity != Vector2.ZERO:
 		get_node("AnimatedSprite2D").play("Walking")

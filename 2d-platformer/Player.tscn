@@ -206,7 +206,7 @@ particle_flag_disable_z = true
 gravity = Vector3(0, 0, 0)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_f7new"]
-size = Vector2(9, 16)
+size = Vector2(5, 14)
 
 [node name="Player" type="Node2D" unique_id=399623464]
 
@@ -223,7 +223,7 @@ amount = 100
 process_material = SubResource("ParticleProcessMaterial_3tfrk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player" unique_id=973283306]
-position = Vector2(-0.5, 8)
+position = Vector2(-0.5, 9)
 shape = SubResource("RectangleShape2D_f7new")
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1562994774]

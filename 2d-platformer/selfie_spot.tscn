@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dr6suwuj8nyxe"]
 
-[ext_resource type="Script" uid="uid://bewmu47jjwrd5" path="res://exit.gd" id="1_cknv1"]
+[ext_resource type="Script" uid="uid://bewmu47jjwrd5" path="res://selfieSpot.gd" id="1_cknv1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bgr0v"]
 

@@ -442,9 +442,6 @@ process_material = SubResource("ParticleProcessMaterial_3tfrk")
 position = Vector2(-0.5, 9)
 shape = SubResource("RectangleShape2D_f7new")
 
-[node name="Camera2D" type="Camera2D" parent="player" unique_id=1562994774]
-zoom = Vector2(3, 3)
-
 [node name="Label" type="Label" parent="player" unique_id=1569079408]
 offset_left = 38.0
 offset_top = -4.0

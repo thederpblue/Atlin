@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://bh8aw6vjq15hd" path="res://Misc scenes/phone_msg.tscn" id="2_e5d48"]
 [ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://POI scenes/Player.tscn" id="3_hq4n8"]
 [ext_resource type="PackedScene" uid="uid://cbt4x2hu3ait5" path="res://background.tscn" id="4_e5d48"]
+[ext_resource type="PackedScene" uid="uid://dyifobekepsn1" path="res://camara.tscn" id="5_hq4n8"]
 
 [node name="Node2D" type="Node2D" unique_id=1724168189]
 
@@ -45,6 +46,16 @@ restore your dash mid air"
 [node name="Background" parent="." unique_id=2080086985 instance=ExtResource("4_e5d48")]
 position = Vector2(265, 318)
 
+[node name="Camara" parent="." unique_id=153716462 instance=ExtResource("5_hq4n8")]
+
+[node name="Camera2D" parent="Camara" index="0" unique_id=847862516]
+position = Vector2(383, 264)
+
+[node name="CollisionShape2D" parent="Camara/Area2D" parent_id_path=PackedInt32Array(153716462, 1701053969) index="0" unique_id=1711771020]
+position = Vector2(847, 203.00002)
+scale = Vector2(1500, 500)
+
 [editable path="TileMaps2"]
 [editable path="spike msg"]
 [editable path="dash orb msg"]
+[editable path="Camara"]

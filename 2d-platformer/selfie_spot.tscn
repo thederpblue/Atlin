@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dr6suwuj8nyxe"]
+
+[ext_resource type="Script" uid="uid://bewmu47jjwrd5" path="res://exit.gd" id="1_cknv1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bgr0v"]
+
+[node name="selfieSpot" type="Node2D" unique_id=2111549884]
+script = ExtResource("1_cknv1")
+metadata/exitDirrection = Vector2(0, 0)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1309245894]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=875923998]
+shape = SubResource("RectangleShape2D_bgr0v")
+
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

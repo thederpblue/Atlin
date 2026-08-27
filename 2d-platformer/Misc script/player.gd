@@ -46,6 +46,8 @@ var dashTime = 0.15
 var dashCooldown = 0.2
 var dashDir = Vector2()
 
+
+
 var lookingAtPhone = false
 
 @onready var col_shape_node := $CollisionShape2D

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bkyhjviiccf30"]
+
+[ext_resource type="Script" uid="uid://de681nfynv56t" path="res://MenuScenes/select_level.gd" id="1_ke1em"]
+[ext_resource type="PackedScene" uid="uid://cbt4x2hu3ait5" path="res://Misc scenes/background.tscn" id="2_ukto2"]
+
+[node name="SelectLevel" type="Control" unique_id=589190015]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ke1em")
+
+[node name="FlowContainer" type="FlowContainer" parent="." unique_id=2083211659]
+layout_mode = 0
+offset_right = 1153.0
+offset_bottom = 648.0
+
+[node name="Background" parent="." unique_id=2080086985 instance=ExtResource("2_ukto2")]
+position = Vector2(191, 563)

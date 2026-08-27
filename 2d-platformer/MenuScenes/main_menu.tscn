@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://d126m65st32lw"]
 
-[ext_resource type="Script" uid="uid://d1e3opewetwlf" path="res://MenuScenes/main_menu.gd" id="1_06t4h"]
+[ext_resource type="Script" uid="uid://b3lwew11eyi4x" path="res://MenuScenes/main_menu.gd" id="1_06t4h"]
 [ext_resource type="PackedScene" uid="uid://cbt4x2hu3ait5" path="res://Misc scenes/background.tscn" id="2_7vrkn"]
 [ext_resource type="FontFile" uid="uid://x7eq3oi3ov61" path="res://textures/textFromMadeline/Renogare-Regular.otf" id="2_fu7sn"]
 

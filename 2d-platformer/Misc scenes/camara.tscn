@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dyifobekepsn1"]
 
 [ext_resource type="Script" uid="uid://ds7isgpcgaw6o" path="res://Misc scenes/camera_2d.gd" id="1_o68wd"]
+[ext_resource type="PackedScene" uid="uid://c6x4pp1gn3gbg" path="res://pause_scene.tscn" id="2_b6b60"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q2j6n"]
 size = Vector2(1, 1)
@@ -10,6 +11,13 @@ size = Vector2(1, 1)
 [node name="Camera2D" type="Camera2D" parent="." unique_id=847862516]
 zoom = Vector2(3, 3)
 script = ExtResource("1_o68wd")
+
+[node name="PauseScene" parent="Camera2D" unique_id=1072531544 instance=ExtResource("2_b6b60")]
+offset_left = -72.0
+offset_top = -41.0
+offset_right = -72.0
+offset_bottom = -41.0
+scale = Vector2(0.5, 0.5)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1701053969]
 

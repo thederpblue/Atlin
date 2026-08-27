@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://c6x4pp1gn3gbg"]
+
+[ext_resource type="Script" uid="uid://d1e3opewetwlf" path="res://MenuScenes/pause_scene.gd" id="1_qkudd"]
+[ext_resource type="FontFile" uid="uid://x7eq3oi3ov61" path="res://textures/textFromMadeline/Renogare-Regular.otf" id="1_w45hp"]
+
+[node name="PauseScene" type="Control" unique_id=1072531544]
+z_index = 10
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_qkudd")
+
+[node name="FlowContainer" type="FlowContainer" parent="." unique_id=2082788137]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 158.0
+
+[node name="Play" type="Button" parent="FlowContainer" unique_id=1092416561]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_w45hp")
+theme_override_font_sizes/font_size = 32
+text = "Play"
+
+[node name="Options" type="Button" parent="FlowContainer" unique_id=1197794155]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_w45hp")
+theme_override_font_sizes/font_size = 32
+text = "Options"
+
+[node name="Exit" type="Button" parent="FlowContainer" unique_id=1651030730]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_w45hp")
+theme_override_font_sizes/font_size = 32
+text = "Exit"
+
+[connection signal="button_down" from="FlowContainer/Play" to="." method="_on_play_button_down"]
+[connection signal="button_down" from="FlowContainer/Options" to="." method="_on_options_button_down"]
+[connection signal="button_down" from="FlowContainer/Exit" to="." method="_on_exit_button_down"]

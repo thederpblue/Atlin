@@ -23,6 +23,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 ScreenHolder="*uid://de8whc8l1vmxe"
+Saver="*uid://b0kiom1ed66nu"
 
 [display]
 

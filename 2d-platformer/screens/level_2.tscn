@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://POI scenes/Player.tscn" id="1_uduit"]
 [ext_resource type="PackedScene" uid="uid://37qs5k2lowvx" path="res://Misc scenes/tile_maps.tscn" id="2_37nrk"]
-[ext_resource type="PackedScene" uid="uid://cbt4x2hu3ait5" path="res://background.tscn" id="3_37nrk"]
-[ext_resource type="PackedScene" uid="uid://dyifobekepsn1" path="res://camara.tscn" id="4_3lyf7"]
+[ext_resource type="PackedScene" uid="uid://cbt4x2hu3ait5" path="res://Misc scenes/background.tscn" id="3_37nrk"]
+[ext_resource type="PackedScene" uid="uid://dyifobekepsn1" path="res://Misc scenes/camara.tscn" id="4_3lyf7"]
 
 [node name="Node2D" type="Node2D" unique_id=1724168189]
 

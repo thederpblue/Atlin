@@ -1,11 +1,11 @@
-[gd_scene format=3 uid="uid://bg6mqh07uhd21"]
+[gd_scene format=3 uid="uid://dr6suwuj8nyxe"]
 
-[ext_resource type="Script" path="res://spike.gd" id="1_3rcpj"]
+[ext_resource type="Script" uid="uid://bewmu47jjwrd5" path="res://Misc scenes/selfieSpot.gd" id="1_cknv1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bgr0v"]
 
-[node name="exit_screen" type="Node2D" unique_id=2111549884]
-script = ExtResource("1_3rcpj")
+[node name="selfieSpot" type="Node2D" unique_id=2111549884]
+script = ExtResource("1_cknv1")
 metadata/exitDirrection = Vector2(0, 0)
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1309245894]

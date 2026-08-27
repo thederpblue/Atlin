@@ -13,7 +13,6 @@ func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_inde
 		player = body
 
 func _process(delta: float) -> void:
-	print(cam_size)
 	if player != null:
 		var goal = player.global_position
 		var futurePos = global_position.move_toward(goal, delta * 200)

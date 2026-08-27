@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://b0kiom1ed66nu"]
+
+[ext_resource type="Script" uid="uid://c7n1m1683abr" path="res://Misc scenes/saver.gd" id="1_8qjo2"]
+
+[node name="Saver" type="Node2D" unique_id=854905440]
+script = ExtResource("1_8qjo2")

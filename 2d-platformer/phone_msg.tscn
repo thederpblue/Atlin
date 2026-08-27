@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://btufj8io1eu7b"]
+
+[ext_resource type="Script" path="res://phone_msg.gd" id="1_e373t"]
+[ext_resource type="Texture2D" uid="uid://khdcpgnkug37" path="res://textures/textFromMadeline/madeline.png" id="2_aln0q"]
+[ext_resource type="Texture2D" uid="uid://bpl2w1xypsj16" path="res://textures/textFromMadeline/normal05.png" id="3_px8o6"]
+[ext_resource type="FontFile" uid="uid://x7eq3oi3ov61" path="res://textures/textFromMadeline/Renogare-Regular.otf" id="4_60np7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q2j6n"]
+
+[node name="Phone msg" type="Node2D" unique_id=724468306]
+script = ExtResource("1_e373t")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=435140569]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=603835970]
+shape = SubResource("RectangleShape2D_q2j6n")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=778711019]
+visible = false
+position = Vector2(0, -52.999996)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("2_aln0q")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=239575992]
+position = Vector2(-679.99994, 0)
+scale = Vector2(1.3999999, 1.3999999)
+texture = ExtResource("3_px8o6")
+
+[node name="Label" type="Label" parent="Sprite2D" unique_id=2005861488]
+offset_left = -499.99994
+offset_top = -100.0
+offset_right = 819.99994
+offset_bottom = 119.99994
+theme_override_fonts/font = ExtResource("4_60np7")
+theme_override_font_sizes/font_size = 50
+vertical_alignment = 1
+
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]
+[connection signal="body_shape_exited" from="Area2D" to="." method="_on_area_2d_body_shape_exited"]

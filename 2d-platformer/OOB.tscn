@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bg6mqh07uhd21"]
+
+[ext_resource type="Script" path="res://spike.gd" id="1_3rcpj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bgr0v"]
+
+[node name="exit_screen" type="Node2D" unique_id=2111549884]
+script = ExtResource("1_3rcpj")
+metadata/exitDirrection = Vector2(0, 0)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1309245894]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=875923998]
+shape = SubResource("RectangleShape2D_bgr0v")
+
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

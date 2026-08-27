@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://cbt4x2hu3ait5"]
+
+[ext_resource type="Texture2D" uid="uid://biiyjhxr0iqef" path="res://textures/backdrops/Screenshot 2026-08-27 090327.png" id="1_oabld"]
+[ext_resource type="Texture2D" uid="uid://phxrum4v4u7h" path="res://textures/backdrops/bg0.png" id="2_i7s6n"]
+[ext_resource type="Texture2D" uid="uid://bgrmuc522xqxn" path="res://textures/backdrops/bg1.png" id="3_splo0"]
+[ext_resource type="Texture2D" uid="uid://ckd1qbm4f0dhu" path="res://textures/backdrops/bg2.png" id="4_eq6nc"]
+
+[node name="Background" type="Node2D" unique_id=2080086985]
+
+[node name="Parallax2D" type="Parallax2D" parent="." unique_id=664331203]
+z_index = -10
+texture_filter = 1
+scroll_scale = Vector2(0.05, 0.05)
+repeat_size = Vector2(1152, 648)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Parallax2D" unique_id=130868888]
+position = Vector2(159, 379)
+scale = Vector2(1.451, 1.35)
+texture = ExtResource("1_oabld")
+
+[node name="Far" type="Parallax2D" parent="." unique_id=2068515987]
+z_index = -10
+texture_filter = 1
+scroll_scale = Vector2(0.1, 0.1)
+scroll_offset = Vector2(0, -117)
+repeat_size = Vector2(1152, 0)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="Far" unique_id=585153837]
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("2_i7s6n")
+
+[node name="med" type="Parallax2D" parent="." unique_id=2013807419]
+z_index = -9
+texture_filter = 1
+scroll_scale = Vector2(0.2, 0.2)
+scroll_offset = Vector2(0, -117)
+repeat_size = Vector2(1152, 0)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="med" unique_id=1119597384]
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("3_splo0")
+
+[node name="close" type="Parallax2D" parent="." unique_id=908794291]
+z_index = -8
+texture_filter = 1
+scroll_scale = Vector2(0.4, 0.4)
+scroll_offset = Vector2(0, -117)
+repeat_size = Vector2(1152, 0)
+repeat_times = 5
+
+[node name="Sprite2D" type="Sprite2D" parent="close" unique_id=431155868]
+scale = Vector2(3.6, 3.6)
+texture = ExtResource("4_eq6nc")

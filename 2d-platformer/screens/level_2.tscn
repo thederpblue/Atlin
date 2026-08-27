@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://POI scenes/Player.tscn" id="1_uduit"]
 [ext_resource type="PackedScene" uid="uid://37qs5k2lowvx" path="res://Misc scenes/tile_maps.tscn" id="2_37nrk"]
+[ext_resource type="PackedScene" uid="uid://cbt4x2hu3ait5" path="res://background.tscn" id="3_37nrk"]
 
 [node name="Node2D" type="Node2D" unique_id=1724168189]
 
@@ -18,5 +19,8 @@ tile_map_data = PackedByteArray("AAAZACEAAAAAAAAAAQAZACIAAAAAAAAAAQAZACMAAAAAAAA
 
 [node name="jumpThru" parent="TileMaps" index="3" unique_id=1311549331]
 tile_map_data = PackedByteArray("AAAWACUADwAAAAAAAAA=")
+
+[node name="Background" parent="." unique_id=2080086985 instance=ExtResource("3_37nrk")]
+position = Vector2(244, 321)
 
 [editable path="TileMaps"]

@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://37qs5k2lowvx" path="res://Misc scenes/tile_maps.tscn" id="1_ebbel"]
 [ext_resource type="PackedScene" uid="uid://bh8aw6vjq15hd" path="res://Misc scenes/phone_msg.tscn" id="2_2e61y"]
 [ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://POI scenes/Player.tscn" id="3_hosbx"]
+[ext_resource type="PackedScene" uid="uid://cbt4x2hu3ait5" path="res://background.tscn" id="4_2e61y"]
 
 [node name="level_one" type="Node2D" unique_id=147307945]
 
@@ -44,6 +45,9 @@ scale = Vector2(15, 2)
 [node name="Label" parent="climb msg/CanvasLayer/Control/Sprite2D" parent_id_path=PackedInt32Array(1539516187, 778711019) index="1" unique_id=2005861488]
 text = "Use X while close to a wall to grab it.
 Use ⬇️⬆️while holding a wall to climb it!"
+
+[node name="Background" parent="." unique_id=2080086985 instance=ExtResource("4_2e61y")]
+position = Vector2(163, 371)
 
 [editable path="TileMaps"]
 [editable path="move msg"]

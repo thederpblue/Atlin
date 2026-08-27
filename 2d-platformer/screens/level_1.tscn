@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://37qs5k2lowvx" path="res://Misc scenes/tile_maps.tscn" id="1_gayso"]
 [ext_resource type="PackedScene" uid="uid://bh8aw6vjq15hd" path="res://Misc scenes/phone_msg.tscn" id="2_e5d48"]
 [ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://POI scenes/Player.tscn" id="3_hq4n8"]
+[ext_resource type="PackedScene" uid="uid://cbt4x2hu3ait5" path="res://background.tscn" id="4_e5d48"]
 
 [node name="Node2D" type="Node2D" unique_id=1724168189]
 
@@ -40,6 +41,9 @@ text = "Lucky, to combat spikes and aid you in your climb
 of Atlin, some kind souls have left dash crystals
 about the mountain which can
 restore your dash mid air"
+
+[node name="Background" parent="." unique_id=2080086985 instance=ExtResource("4_e5d48")]
+position = Vector2(265, 318)
 
 [editable path="TileMaps2"]
 [editable path="spike msg"]

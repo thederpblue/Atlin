@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://d126m65st32lw"]
+
+[ext_resource type="Script" uid="uid://d1e3opewetwlf" path="res://MenuScenes/main_menu.gd" id="1_06t4h"]
+[ext_resource type="PackedScene" uid="uid://cbt4x2hu3ait5" path="res://background.tscn" id="2_7vrkn"]
+[ext_resource type="FontFile" uid="uid://x7eq3oi3ov61" path="res://textures/textFromMadeline/Renogare-Regular.otf" id="2_fu7sn"]
+
+[node name="MainMenu" type="Control" unique_id=772348456]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_06t4h")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=285221268]
+layout_mode = 0
+offset_left = 326.0
+offset_top = 269.0
+offset_right = 826.0
+offset_bottom = 415.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1260231598]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1792379842]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 32
+text = "Play"
+
+[node name="Options" type="Button" parent="MarginContainer/VBoxContainer" unique_id=505410214]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 32
+text = "Options"
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=959798895]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 32
+text = "Exit"
+
+[node name="Background" parent="." unique_id=2080086985 instance=ExtResource("2_7vrkn")]
+position = Vector2(349, 569)
+
+[connection signal="button_down" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_button_down"]
+[connection signal="button_down" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_button_down"]

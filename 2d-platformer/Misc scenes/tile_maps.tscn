@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://d08sx0cjp5tgw" path="res://textures/terrain/rock.png" id="12_7al5n"]
 [ext_resource type="PackedScene" uid="uid://kfi0ye6744d" path="res://POI scenes/checkpoint.tscn" id="13_67tlw"]
 [ext_resource type="Texture2D" uid="uid://bmwqsj6wfp1nd" path="res://textures/terrain/summitNoSnow.png" id="13_g1cmp"]
+[ext_resource type="PackedScene" uid="uid://dgw4hs7lod8ju" path="res://POI scenes/Seeker_barrier.tscn" id="19_cp331"]
 [ext_resource type="PackedScene" uid="uid://1ui7iy62s485" path="res://Monster scenes/seeker_bat.tscn" id="21_dvb5k"]
 [ext_resource type="Texture2D" uid="uid://ccap65s6g4np2" path="res://textures/jumpThru/dream.png" id="22_uhli1"]
 [ext_resource type="Texture2D" uid="uid://waqssmwyoxru" path="res://textures/jumpThru/moon.png" id="23_acl70"]
@@ -2551,6 +2552,10 @@ scenes/1/scene = ExtResource("5_8omh0")
 resource_name = "player"
 scenes/1/scene = ExtResource("6_04x00")
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_uindb"]
+resource_name = "Seeker_Barrier"
+scenes/1/scene = ExtResource("19_cp331")
+
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_exrhb"]
 resource_name = "checkpoint"
 scenes/1/scene = ExtResource("13_67tlw")
@@ -2570,6 +2575,7 @@ sources/4 = SubResource("TileSetScenesCollectionSource_4ijjx")
 sources/0 = SubResource("TileSetScenesCollectionSource_67tlw")
 sources/6 = SubResource("TileSetScenesCollectionSource_exrhb")
 sources/7 = SubResource("TileSetScenesCollectionSource_uhli1")
+sources/5 = SubResource("TileSetScenesCollectionSource_uindb")
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_ai720"]
 resource_name = "seeker_bat"

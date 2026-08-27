@@ -6,7 +6,7 @@ func _physics_process(delta: float) -> void:
 	velocity *= 0.9
 	stunTime -= delta
 	var goal = get_tree().current_scene.get_node("Player").get_node("player").global_position
-	if goal.distance_to(global_position) < 200 and stunTime < 0:
+	if goal.distance_to(global_position) < 150 and stunTime < 0:
 		global_position = global_position.move_toward(goal, delta * 50)
 	move_and_slide()
 

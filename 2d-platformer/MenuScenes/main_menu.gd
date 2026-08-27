@@ -1,11 +1,11 @@
 extends Control
 
 func _on_play_button_down() -> void:
-	get_tree().change_scene_to_file("res://screens/level_0.tscn")
+	get_tree().change_scene_to_file("res://Misc scenes/select_level.tscn")
 
 
 func _on_exit_button_down() -> void:
-	saver.saveGame()
+	Saver.saveGame()
 	get_tree().quit()
 
 

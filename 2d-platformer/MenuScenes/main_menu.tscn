@@ -41,8 +41,15 @@ theme_override_fonts/font = ExtResource("2_fu7sn")
 theme_override_font_sizes/font_size = 32
 text = "Exit"
 
+[node name="reset save" type="Button" parent="MarginContainer/VBoxContainer" unique_id=832424355]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 32
+text = "Reset save (DEV TOOL)"
+
 [node name="Background" parent="." unique_id=2080086985 instance=ExtResource("2_7vrkn")]
 position = Vector2(349, 569)
 
 [connection signal="button_down" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_button_down"]
 [connection signal="button_down" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_button_down"]
+[connection signal="button_down" from="MarginContainer/VBoxContainer/reset save" to="." method="_on_reset_save_button_down"]

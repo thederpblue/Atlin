@@ -15,7 +15,9 @@ func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_inde
 func _process(delta: float) -> void:
 	if player != null:
 		var goal = player.global_position
-		var futurePos = global_position.move_toward(goal, delta * 200)
+		var speed = goal.distance_to(global_position) * 10
+		
+		var futurePos = global_position.move_toward(goal, delta * speed)
 		if futurePos.x + (cam_size.x/2) <= pos.x + (size.x/2) and futurePos.x - (cam_size.x/2) >= pos.x - (size.x/2):
 			global_position.x = futurePos.x
 		if futurePos.y + (cam_size.y/2) <= pos.y + (size.y/2) and futurePos.y - (cam_size.y/2) >= pos.y - (size.y/2):

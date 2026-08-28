@@ -504,7 +504,7 @@ script = ExtResource("1_ny23k")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="player" unique_id=631297549]
 sprite_frames = SubResource("SpriteFrames_gueye")
 animation = &"Selfie"
-frame_progress = 0.90442526
+frame_progress = 0.25390804
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="player" unique_id=1713399803]
 emitting = false

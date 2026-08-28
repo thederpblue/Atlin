@@ -10,6 +10,8 @@ func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_inde
 	if body.name == "player" and collected == false:
 		collected = true
 		cam.animating = true
+
+		
 		if !Saver.collectableCollected.has(ScreenHolder.currentScreenNum):
 			Saver.collectableCollected.append(ScreenHolder.currentScreenNum)
 			Saver.saveGame()

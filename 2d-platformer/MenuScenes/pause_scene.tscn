@@ -7,12 +7,31 @@
 z_index = 10
 layout_mode = 3
 anchors_preset = 0
+size_flags_horizontal = 4
 script = ExtResource("1_qkudd")
 
 [node name="FlowContainer" type="FlowContainer" parent="." unique_id=2082788137]
+z_index = 20
 layout_mode = 0
-offset_right = 300.0
-offset_bottom = 158.0
+offset_left = -149.0
+offset_top = -135.0
+offset_right = 151.0
+offset_bottom = 131.0
+
+[node name="Continue" type="Button" parent="FlowContainer" unique_id=1289976147]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_w45hp")
+theme_override_font_sizes/font_size = 32
+text = "Continue
+"
+
+[node name="Retry" type="Button" parent="FlowContainer" unique_id=175582708]
+custom_minimum_size = Vector2(300, 50)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_w45hp")
+theme_override_font_sizes/font_size = 32
+text = "Retry"
 
 [node name="Main Menu" type="Button" parent="FlowContainer" unique_id=1092416561]
 custom_minimum_size = Vector2(300, 50)
@@ -35,6 +54,17 @@ theme_override_fonts/font = ExtResource("1_w45hp")
 theme_override_font_sizes/font_size = 32
 text = "Exit"
 
+[node name="ColorRect" type="ColorRect" parent="." unique_id=184825425]
+layout_mode = 0
+offset_left = -570.0
+offset_top = -347.0
+offset_right = 579.0
+offset_bottom = 344.0
+mouse_filter = 2
+color = Color(0.05490196, 0.05490196, 0.05490196, 0.6156863)
+
+[connection signal="button_down" from="FlowContainer/Continue" to="." method="_on_continue_button_down"]
+[connection signal="button_down" from="FlowContainer/Retry" to="." method="_on_retry_button_down"]
 [connection signal="button_down" from="FlowContainer/Main Menu" to="." method="_on_main_menu_button_down"]
 [connection signal="button_down" from="FlowContainer/Options" to="." method="_on_options_button_down"]
 [connection signal="button_down" from="FlowContainer/Exit" to="." method="_on_exit_button_down"]

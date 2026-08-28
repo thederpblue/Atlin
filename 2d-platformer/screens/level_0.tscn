@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://b6uamg64nmb2n" path="res://POI scenes/Player.tscn" id="3_hosbx"]
 [ext_resource type="PackedScene" uid="uid://cbt4x2hu3ait5" path="res://Misc scenes/background.tscn" id="4_2e61y"]
 [ext_resource type="PackedScene" uid="uid://dyifobekepsn1" path="res://Misc scenes/camara.tscn" id="5_hosbx"]
-[ext_resource type="PackedScene" uid="uid://dr6suwuj8nyxe" path="res://Misc scenes/selfie_spot.tscn" id="6_e67qm"]
 
 [node name="level_one" type="Node2D" unique_id=147307945]
 
@@ -59,9 +58,6 @@ position = Vector2(294, 326)
 [node name="CollisionShape2D" parent="Camara/Area2D" parent_id_path=PackedInt32Array(153716462, 1701053969) index="0" unique_id=1711771020]
 position = Vector2(400, 87)
 scale = Vector2(600, 700)
-
-[node name="selfieSpot" parent="." unique_id=2111549884 instance=ExtResource("6_e67qm")]
-position = Vector2(170, 229)
 
 [editable path="TileMaps"]
 [editable path="move msg"]

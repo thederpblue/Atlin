@@ -34,6 +34,7 @@ animations = [{
 [node name="seeker_bat" type="Node2D" unique_id=880036090]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1755874046]
+collision_mask = 3
 platform_wall_layers = 1
 script = ExtResource("1_tcvwy")
 
@@ -50,13 +51,13 @@ autoplay = "default"
 frame_progress = 0.7010952
 
 [node name="Kill box" type="Area2D" parent="CharacterBody2D" unique_id=1324875174]
+collision_mask = 3
 
 [node name="KillBoxShape" type="CollisionShape2D" parent="CharacterBody2D/Kill box" unique_id=540426078]
 scale = Vector2(1.1, 1.1)
 shape = SubResource("CircleShape2D_bgr0v")
 
 [node name="Hit box" type="Area2D" parent="CharacterBody2D" unique_id=345184772]
-collision_layer = 3
 collision_mask = 3
 
 [node name="HitBoxShape" type="CollisionShape2D" parent="CharacterBody2D/Hit box" unique_id=1907477495]

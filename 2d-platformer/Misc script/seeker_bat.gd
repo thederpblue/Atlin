@@ -9,7 +9,7 @@ func _physics_process(delta: float) -> void:
 	if goal.distance_to(global_position) < 150 and stunTime < 0:
 		global_position = global_position.move_toward(goal, delta * 50)
 	move_and_slide()
-
+	
 
 func _on_kill_box_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
 	if body.name == "player" and stunTime < 0:

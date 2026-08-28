@@ -52,6 +52,8 @@ var lookingAtPhone = false
 
 @onready var col_shape_node := $CollisionShape2D
 
+
+
 func respawn():
 	stunned = true
 	get_node("AnimatedSprite2D").play("Death")
@@ -66,10 +68,11 @@ func respawn():
 func _ready():
 	respawnPoint = position 
 	velocity = ScreenHolder.carry_velocity
+	
 
 func _physics_process(delta):
 	if not stunned:
-		#get_node("Label").text = str(velocity)
+		
 		updateTimes(delta)
 		updateIcon()
 		applyfriction(delta)

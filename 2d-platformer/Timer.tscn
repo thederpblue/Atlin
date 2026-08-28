@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dbjcdglcy73pp"]
+
+[ext_resource type="Script" uid="uid://hwv4wu8vxicp" path="res://timer.gd" id="1_7jo7d"]
+
+[node name="Control" type="Control" unique_id=1784724427]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7jo7d")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=23818391]
+
+[node name="TempTimer" type="Label" parent="CanvasLayer" unique_id=304198040]
+anchors_preset = -1
+anchor_left = 0.00016666783
+anchor_top = 0.026234567
+anchor_right = 0.034000006
+anchor_bottom = 0.06432099
+offset_left = -0.19200134
+offset_right = -0.16800308
+offset_bottom = 0.3199997
+metadata/_edit_use_anchors_ = true
+
+[node name="PermTimer" type="Label" parent="CanvasLayer" unique_id=1360629902]
+anchors_preset = -1
+anchor_right = 0.034
+anchor_bottom = 0.035
+offset_right = -0.16800308
+offset_bottom = 0.3199997

@@ -35,6 +35,7 @@ func setup(levelNumber, picturePath):
 	picture = picturePath
 
 func loadLevel(lvl):
+	ScreenHolder.currentScreenNum = levelNum
 	get_tree().change_scene_to_file("screens/level_" + str(lvl) + ".tscn")
 
 func load_icon(path: String) -> Texture2D:

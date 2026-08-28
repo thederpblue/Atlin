@@ -176,6 +176,7 @@ func updateIcon():
 			elif velocity.y > 0:
 				get_node("AnimatedSprite2D").play_backwards("Climb" + str(dashes))
 			if velocity.y == 0:
+				get_node("AnimatedSprite2D").play("Climb" + str(dashes))
 				get_node("AnimatedSprite2D").pause()
 		elif velocity.y >= 200:
 			get_node("AnimatedSprite2D").play("Falling" + str(dashes))

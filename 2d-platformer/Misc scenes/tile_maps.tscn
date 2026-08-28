@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://dgw4hs7lod8ju" path="res://POI scenes/Seeker_barrier.tscn" id="19_cp331"]
 [ext_resource type="PackedScene" uid="uid://1ui7iy62s485" path="res://Monster scenes/seeker_bat.tscn" id="21_dvb5k"]
 [ext_resource type="Texture2D" uid="uid://ccap65s6g4np2" path="res://textures/jumpThru/dream.png" id="22_uhli1"]
+[ext_resource type="PackedScene" uid="uid://vhin8fy06mma" path="res://POI scenes/blocker.tscn" id="22_uindb"]
 [ext_resource type="Texture2D" uid="uid://waqssmwyoxru" path="res://textures/jumpThru/moon.png" id="23_acl70"]
 [ext_resource type="Texture2D" uid="uid://b1a6afa7q8upd" path="res://textures/jumpThru/reflection.png" id="24_v6y7r"]
 [ext_resource type="Texture2D" uid="uid://452fmekhhh8i" path="res://textures/jumpThru/temple.png" id="25_fmibl"]
@@ -2567,6 +2568,10 @@ scenes/1/scene = ExtResource("13_67tlw")
 resource_name = "spike"
 scenes/1/scene = ExtResource("6_14wfa")
 
+[sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_gtknh"]
+resource_name = "Blocker"
+scenes/1/scene = ExtResource("22_uindb")
+
 [sub_resource type="TileSet" id="TileSet_8omh0"]
 tile_size = Vector2i(8, 8)
 physics_layer_0/collision_layer = 2
@@ -2580,6 +2585,7 @@ sources/0 = SubResource("TileSetScenesCollectionSource_67tlw")
 sources/6 = SubResource("TileSetScenesCollectionSource_exrhb")
 sources/7 = SubResource("TileSetScenesCollectionSource_uhli1")
 sources/5 = SubResource("TileSetScenesCollectionSource_uindb")
+sources/8 = SubResource("TileSetScenesCollectionSource_gtknh")
 
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_ai720"]
 resource_name = "seeker_bat"

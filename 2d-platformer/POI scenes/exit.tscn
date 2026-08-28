@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://d3wqn7htklhqc" path="res://Misc script/exit.gd" id="1_6sfst"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bgr0v"]
+size = Vector2(8, 8)
 
 [node name="exit_screen" type="Node2D" unique_id=2111549884]
 script = ExtResource("1_6sfst")
@@ -12,5 +13,6 @@ metadata/exitDirrection = Vector2(0, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=875923998]
 shape = SubResource("RectangleShape2D_bgr0v")
+debug_color = Color(0, 1, 0, 0.41960785)
 
 [connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

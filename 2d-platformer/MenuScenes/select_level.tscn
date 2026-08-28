@@ -16,6 +16,7 @@ script = ExtResource("1_ke1em")
 layout_mode = 0
 offset_right = 1153.0
 offset_bottom = 648.0
+alignment = 1
 
 [node name="Background" parent="." unique_id=2080086985 instance=ExtResource("2_ukto2")]
 position = Vector2(191, 563)

@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://cyvy6q28rcevh" path="res://textures/monsters/pixil-frame-0 (1).png" id="3_oc4h5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fvj6w"]
-size = Vector2(8, 2.5)
+size = Vector2(10, 3.25)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_bgr0v"]
 radius = 4.1231055
@@ -61,7 +61,7 @@ shape = SubResource("CircleShape2D_bgr0v")
 collision_mask = 3
 
 [node name="HitBoxShape" type="CollisionShape2D" parent="CharacterBody2D/Hit box" unique_id=1907477495]
-position = Vector2(0, -4)
+position = Vector2(0, -4.375)
 shape = SubResource("RectangleShape2D_fvj6w")
 
 [connection signal="body_shape_entered" from="CharacterBody2D/Kill box" to="CharacterBody2D" method="_on_kill_box_body_shape_entered"]

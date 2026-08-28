@@ -5,7 +5,8 @@ size = Vector2(8, 8)
 
 [node name="Blocker" type="Node2D" unique_id=1825073888]
 
-[node name="Area2D" type="Area2D" parent="." unique_id=226141616]
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1606381628]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=882300669]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=882300669]
 shape = SubResource("RectangleShape2D_bgr0v")
+debug_color = Color(0, 0, 1, 0.41960785)

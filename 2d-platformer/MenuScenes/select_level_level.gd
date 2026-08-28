@@ -7,7 +7,7 @@ var picture
 
 
 func _ready() -> void:
-	if Saver.collectableCollected.has(levelNum):
+	if !Saver.collectableCollected.has(levelNum):
 		cam.self_modulate = Color(0.306, 0.306, 0.306, 0.5)
 	
 	

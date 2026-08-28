@@ -1,12 +1,14 @@
 extends Node2D
 var carry_velocity := Vector2.ZERO
+var collected = false
 @onready var cam = get_node("CamaraSprite")
 func _ready():
 	if Saver.collectableCollected.has(ScreenHolder.currentScreenNum):
 		cam.self_modulate = Color(0.306, 0.306, 0.306, 0.5)
 
 func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
-	if body.name == "player":
+	if body.name == "player" and collected == false:
+		collected = true
 		cam.animating = true
 		if !Saver.collectableCollected.has(ScreenHolder.currentScreenNum):
 			Saver.collectableCollected.append(ScreenHolder.currentScreenNum)

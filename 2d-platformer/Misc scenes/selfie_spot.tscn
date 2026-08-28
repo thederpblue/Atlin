@@ -37,7 +37,7 @@ shape = SubResource("RectangleShape2D_bgr0v")
 [node name="CamaraSprite" type="AnimatedSprite2D" parent="." unique_id=1502269]
 sprite_frames = SubResource("SpriteFrames_bgr0v")
 animation = &"take_photo"
-frame_progress = 0.07235224
+frame_progress = 0.7551277
 script = ExtResource("5_3xrx2")
 
 [connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

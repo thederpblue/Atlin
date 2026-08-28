@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 
-var respawning = false
+var stunned = false
 var was_left = false
 var was_right = false
 
@@ -53,7 +53,7 @@ var lookingAtPhone = false
 @onready var col_shape_node := $CollisionShape2D
 
 func respawn():
-	respawning = true
+	stunned = true
 	get_node("AnimatedSprite2D").play("Death")
 	ScreenHolder.currentScreenName = get_tree().current_scene.scene_file_path
 	ScreenHolder.carry_velocity = Vector2.ZERO
@@ -68,7 +68,7 @@ func _ready():
 	velocity = ScreenHolder.carry_velocity
 
 func _physics_process(delta):
-	if not respawning:
+	if not stunned:
 		#get_node("Label").text = str(velocity)
 		updateTimes(delta)
 		updateIcon()
@@ -164,7 +164,7 @@ func applyfriction(delta):
 			velocity.x += delta * decelerationAboveMax
 	
 func updateIcon():
-	if not respawning:
+	if not stunned:
 		if lookingAtPhone:
 			get_node("AnimatedSprite2D").play("Phone_msg")
 		elif isClimbing:

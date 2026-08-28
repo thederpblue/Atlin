@@ -1,10 +1,6 @@
 extends Control
 var paused = false
 
-func _on_play_button_down() -> void:
-	get_tree().change_scene_to_file("res://MenuScenes/select_level.tscn")
-
-
 func _on_exit_button_down() -> void:
 	Saver.saveGame()
 	get_tree().quit()
@@ -22,3 +18,7 @@ func _process(delta: float) -> void:
 		visible = true
 	else:
 		visible = false
+
+
+func _on_main_menu_button_down() -> void:
+	get_tree().change_scene_to_file("res://MenuScenes/main_menu.tscn")

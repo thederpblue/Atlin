@@ -2,11 +2,10 @@ extends Node2D
 
 const save_location = "user://Savefile.json"
 
-var completedScreens = ["-1"]
-var collectableCollected = ["-1"]
+var completedScreens = []
+var collectableCollected = []
 
 var contentToSave = {}
-
 
 func saveGame():
 	contentToSave = {"completedScreens": completedScreens, "collectableCollected": collectableCollected}
@@ -33,5 +32,5 @@ func deleteSave():
 	var file = FileAccess.open(save_location, FileAccess.WRITE)
 	file.store_var(contentToSave.duplicate())
 	file.close()
-	completedScreens = ["-1"]
-	collectableCollected = ["-1"]
+	completedScreens = [-1]
+	collectableCollected = [-1]

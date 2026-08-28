@@ -1,8 +1,29 @@
 [gd_scene format=3 uid="uid://dr6suwuj8nyxe"]
 
 [ext_resource type="Script" uid="uid://bewmu47jjwrd5" path="res://Misc scenes/selfieSpot.gd" id="1_cknv1"]
+[ext_resource type="Texture2D" uid="uid://c5psqrm3ade16" path="res://textures/theo/photo/cam.png" id="2_ubyf5"]
+[ext_resource type="Texture2D" uid="uid://tylkilxo25" path="res://textures/theo/photo/cam_with_flash.png" id="3_3xrx2"]
+[ext_resource type="Texture2D" uid="uid://bdf34f53oyo7k" path="res://textures/theo/photo/cam_with_photo.png" id="4_ia1hv"]
+[ext_resource type="Script" uid="uid://btr0nkbqaa6p7" path="res://Misc scenes/camara_sprite.gd" id="5_3xrx2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bgr0v"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bgr0v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_ubyf5")
+}, {
+"duration": 0.3,
+"texture": ExtResource("3_3xrx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ia1hv")
+}],
+"loop": 1,
+"name": &"take_photo",
+"speed": 1.0
+}]
 
 [node name="selfieSpot" type="Node2D" unique_id=2111549884]
 script = ExtResource("1_cknv1")
@@ -12,5 +33,11 @@ metadata/exitDirrection = Vector2(0, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=875923998]
 shape = SubResource("RectangleShape2D_bgr0v")
+
+[node name="CamaraSprite" type="AnimatedSprite2D" parent="." unique_id=1502269]
+sprite_frames = SubResource("SpriteFrames_bgr0v")
+animation = &"take_photo"
+frame_progress = 0.07235224
+script = ExtResource("5_3xrx2")
 
 [connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]

@@ -17,3 +17,10 @@ func _on_options_button_down() -> void:
 
 func _on_reset_save_button_down() -> void:
 	Saver.deleteSave()
+
+
+func _on_unlock_all_levels_button_down() -> void:
+	for i in range(100):
+		Saver.completedScreens.append(i)
+	Saver.saveGame()
+	Saver.loadGame()

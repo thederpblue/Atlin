@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://d3gy0xqw2xshf"]
+
+[ext_resource type="Script" uid="uid://hobpnprb7vad" path="res://MenuScenes/select_level_level.gd" id="1_7xe8k"]
+
+[node name="select_level_level" type="Node2D" unique_id=1597648562]
+script = ExtResource("1_7xe8k")
+
+[node name="Button" type="Button" parent="." unique_id=109060367]
+offset_right = 8.0
+offset_bottom = 8.0
+icon_alignment = 1
+vertical_icon_alignment = 0

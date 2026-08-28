@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://d3gy0xqw2xshf"]
+
+[ext_resource type="Script" uid="uid://hobpnprb7vad" path="res://MenuScenes/select_level_level.gd" id="1_7xe8k"]
+[ext_resource type="Texture2D" uid="uid://c5psqrm3ade16" path="res://textures/theo/photo/cam.png" id="2_d0ln3"]
+
+[node name="Button" type="Button" unique_id=526197273]
+offset_right = 8.0
+offset_bottom = 8.0
+icon_alignment = 1
+vertical_icon_alignment = 0
+script = ExtResource("1_7xe8k")
+
+[node name="camara" type="Sprite2D" parent="." unique_id=649956282]
+position = Vector2(97.00001, 100.00001)
+texture = ExtResource("2_d0ln3")

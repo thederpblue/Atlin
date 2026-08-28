@@ -14,12 +14,12 @@ layout_mode = 0
 offset_right = 300.0
 offset_bottom = 158.0
 
-[node name="Play" type="Button" parent="FlowContainer" unique_id=1092416561]
+[node name="Main Menu" type="Button" parent="FlowContainer" unique_id=1092416561]
 custom_minimum_size = Vector2(300, 50)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_w45hp")
 theme_override_font_sizes/font_size = 32
-text = "Play"
+text = "Main Menu"
 
 [node name="Options" type="Button" parent="FlowContainer" unique_id=1197794155]
 custom_minimum_size = Vector2(300, 50)
@@ -35,6 +35,6 @@ theme_override_fonts/font = ExtResource("1_w45hp")
 theme_override_font_sizes/font_size = 32
 text = "Exit"
 
-[connection signal="button_down" from="FlowContainer/Play" to="." method="_on_play_button_down"]
+[connection signal="button_down" from="FlowContainer/Main Menu" to="." method="_on_main_menu_button_down"]
 [connection signal="button_down" from="FlowContainer/Options" to="." method="_on_options_button_down"]
 [connection signal="button_down" from="FlowContainer/Exit" to="." method="_on_exit_button_down"]

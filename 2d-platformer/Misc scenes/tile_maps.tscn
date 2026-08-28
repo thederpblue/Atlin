@@ -2532,6 +2532,9 @@ pattern_8 = SubResource("TileMapPattern_exrhb")
 pattern_9 = SubResource("TileMapPattern_1ux2b")
 pattern_10 = SubResource("TileMapPattern_jhfte")
 
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_cp331"]
+bounce = 0.5
+
 [sub_resource type="TileSetScenesCollectionSource" id="TileSetScenesCollectionSource_67tlw"]
 resource_name = "OOB"
 scenes/1/scene = ExtResource("7_gb46f")
@@ -2565,9 +2568,9 @@ resource_name = "spike"
 scenes/1/scene = ExtResource("6_14wfa")
 
 [sub_resource type="TileSet" id="TileSet_8omh0"]
-tile_size = Vector2i(8, 8)
 physics_layer_0/collision_layer = 2
 physics_layer_0/collision_mask = 2
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_cp331")
 sources/1 = SubResource("TileSetScenesCollectionSource_g2g2v")
 sources/2 = SubResource("TileSetScenesCollectionSource_oodp6")
 sources/3 = SubResource("TileSetScenesCollectionSource_adeds")
@@ -2646,13 +2649,20 @@ texture_region_size = Vector2i(24, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_u6lsi"]
 texture = ExtResource("28_38vji")
-texture_region_size = Vector2i(24, 8)
+texture_region_size = Vector2i(12, 8)
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -4, 12, -4, 12, 4, -12, 4)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6, -4, 6, -4, 6, 4, -6, 4)
 0:0/0/physics_layer_0/polygon_0/one_way = true
 0:1/0 = 0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-12, -4, 12, -4, 12, 4, -12, 4)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6, -4, 6, -4, 6, 4, -6, 4)
 0:1/0/physics_layer_0/polygon_0/one_way = true
+1:0/next_alternative_id = 2
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6, -4, 6, -4, 6, 4, -6, 4)
+1:0/0/physics_layer_0/polygon_0/one_way = true
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-6, -4, 6, -4, 6, 4, -6, 4)
+1:1/0/physics_layer_0/polygon_0/one_way = true
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qio34"]
 texture = ExtResource("29_b14xk")
@@ -2665,7 +2675,7 @@ texture_region_size = Vector2i(24, 8)
 0:1/0/physics_layer_0/polygon_0/one_way = true
 
 [sub_resource type="TileSet" id="TileSet_fvj6w"]
-tile_size = Vector2i(24, 8)
+tile_size = Vector2i(12, 8)
 physics_layer_0/collision_layer = 1
 sources/8 = SubResource("TileSetAtlasSource_u6lsi")
 sources/9 = SubResource("TileSetAtlasSource_qio34")

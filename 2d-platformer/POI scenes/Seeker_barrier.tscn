@@ -1,12 +1,27 @@
 [gd_scene format=3 uid="uid://dgw4hs7lod8ju"]
 
+[ext_resource type="Texture2D" uid="uid://gcd73e5iawp4" path="res://textures/POI/pixil-frame-0.png" id="1_y2wh4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l0bqs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_y2wh4")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_554jr"]
 
 [node name="Node2D" type="Node2D" unique_id=770598124]
 
-[node name="Area2D" type="Area2D" parent="." unique_id=1893371693]
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=21833598]
 collision_layer = 2
-collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1946407708]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="StaticBody2D" unique_id=1215910809]
+sprite_frames = SubResource("SpriteFrames_l0bqs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1946407708]
 shape = SubResource("RectangleShape2D_554jr")

@@ -16,6 +16,7 @@ func saveGame():
 
 func loadGame():
 	if FileAccess.file_exists(save_location):
+		ScreenHolder.tempTimer = 0
 		var file = FileAccess.open(save_location, FileAccess.READ)
 		contentToSave = file.get_var()
 		file.close()
